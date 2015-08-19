@@ -1,0 +1,20 @@
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+li{
+  font-size: 17px;
+  padding: 6px 2px;
+  display: inline;
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+navbar a{
+  padding: 15px;
+}
+
+navbar{
+  background-color: #003BSC;
+}
