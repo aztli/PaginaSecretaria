@@ -3,17 +3,87 @@
 }
 
 navbar{
-  background-color: #003BSC;
+  background-color:#003B5C;
 }
 
 navbar a{
   padding: 15px;
 }
 
-li{
-  font-size: 17px;
-  padding: 6px 2px;
-  display: inline;
-  padding-left: 15px;
-  padding-top: 25px;
+#foot{
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 156px;
+    left: 0px;
+    background-color: #003B5C;
+    font-size: 12px;
 }
+
+#foot a{
+    text-decoration: none;
+    color: #00B5E2;
+}
+
+.panel {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	min-height: 5px;
+	overflow: hidden;
+}
+
+.panel_izquierdo {
+    width: 320px;
+    float: left;
+    padding-left: 100px;
+}
+
+.panel_derecho {
+    width: 320px;
+    float: right;
+    padding-right:50px;
+}
+
+#logo_buap_footer .escudo {
+    display: block;
+    height: 145px;
+    width: 130px;
+    background-image: url("../images/logo_buap.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    padding-top: 10px;
+    padding-left: 150px;
+    margin: auto;
+}
+
+#buap-privacidad_avisos {
+  margin: 40px auto 0 auto;
+  font-weight: normal;
+  padding-left:250px;
+}
+
+#buap-privacidad_aviso a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    }
+
+
+
+#facultad-info a.nombre {
+  margin-top: 40px;
+}
+
+#facultad-info a {
+  font-size: 12px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+
+
+.panel.centro{  
+    width: 400px; 
+}
+
