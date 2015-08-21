@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Secretaria Academica FCC</title>
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   <script src="js/semantic.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+    <link type="text/css" rel="stylesheet" href="css/icon.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
 
@@ -34,6 +36,67 @@
       </div>
     </div>
   </div>
+    <section class="grisclaro">
+        <div class="ui container">
+            <div id="shapeImages" class="ui one column center aligned stackable doubling grid">
+                <div class="column">
+                    <div class="ui text shape">
+                        <div class="sides">
+                            <div class="second side">
+                                <img class="ui large image" src="images/Calendario_Oto15.png">
+                            </div>
+                            <div class="active first side">
+                                <img class="ui large image inverted" src="images/calendario_profesional_2015.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui ignored hidden divider"></div>
+                    <div class="ui ignored icon direction buttons">
+                        <div data-direction="over" data-animation="flip" title="Anterior" class="ui button" data-shape="square"><i class="arrow left icon"></i></div>
+                        <div data-direction="back" data-animation="flip" title="Siguiente" class="ui button" data-shape="square"><i class="arrow right icon"></i></div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    $(document)
+                        .ready(function() {
+                        var
+                        $demo = $('#shapeImages .ui.shape'),
+                        $directionButton = $('#shapeImages .direction .button'),
+                        handler
+                        ;
+                        // event handlers
+                        handler = {
+                            rotate: function() {
+                                var
+                                $shape    = $(this).closest('.buttons').prevAll('.ui.shape').eq(0),
+                                direction = $(this).data('direction') || false,
+                                animation = $(this).data('animation') || false
+                                ;
+                                if(direction && animation) {
+                                    $shape
+                                    .shape(animation + '.' + direction)
+                                    ;
+                                }
+                            }
+                        };
+                        // attach events
+                        $demo
+                            .shape()
+                        ;
+                        $directionButton
+                            .on('click', handler.rotate)
+                            .popup({
+                            position  : 'bottom center'
+                        })
+                        ;
+                    })
+                    ;
+                </script>
+
+            </div>
+        </div>
+    </section>
 </body>
 <div id="foot">  
         <div class="panel_izquierdo">
