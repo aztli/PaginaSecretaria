@@ -171,3 +171,12 @@ navbar a{
     font-size: .8em;
 }
 
+.text-medium {
+    font-size: 0.9em;
+}
+
+#inicio {
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
+}
+
