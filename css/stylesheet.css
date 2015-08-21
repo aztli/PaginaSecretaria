@@ -151,3 +151,23 @@ navbar a{
   font-size: 1rem;
 }
 
+.azul-oscuro-buap {
+    background: #003B5C !important;
+}
+
+.azul-oscuro-buap-text {
+    color: #003B5C !important;
+}
+
+.azul-claro-buap {
+    background-color: #009ec0 !important;
+}
+
+.azul-claro-buap-texto {
+    color: #009ec0 !important;
+}
+
+.text-small {
+    font-size: .8em;
+}
+
