@@ -11,6 +11,7 @@ navbar a{
 }
 
 #foot{
+    display: block;
     bottom: 0px;
     position: absolute;
     width: 100%;
