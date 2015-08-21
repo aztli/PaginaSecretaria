@@ -51,7 +51,7 @@ navbar a{
     height: 145px;
     width: 130px;
     background-image: url("../images/logo_buap.png");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     padding-top: 10px;
     padding-left: 150px;
@@ -84,8 +84,8 @@ navbar a{
 }
 
 
-.panel.centro{  
-    width: 400px; 
+.panel.centro{
+    width: 400px;
 }
 
 .ui.huge.images.inverted .image,
@@ -118,19 +118,28 @@ navbar a{
 .ui.mini.images.inverted .image,
 .ui.mini.images.inverted img,
 .ui.mini.images.inverted svg,
-.ui.mini.image.inverted {
+.ui.mini.image {
   width: auto;
-  height: 35px;
+  height: 55px;
   font-size: 0.71428571rem;
 }
 
 .ui.tiny.images.inverted .image,
 .ui.tiny.images.inverted img,
 .ui.tiny.images.inverted svg,
-.ui.tiny.image.inverted {
+.ui.tiny.image{
   width: auto;
   height: 80px;
   font-size: 0.85714286rem;
+}
+
+.ui.minitiny.images.inverted .image,
+.ui.minitiny.images.inverted img,
+.ui.minitiny.images.inverted svg,
+.ui.minitiny.image {
+  width: auto;
+  height: 100px;
+  font-size: 0.89214286rem;
 }
 
 .ui.small.images .image,
@@ -138,7 +147,7 @@ navbar a{
 .ui.small.images svg,
 .ui.small.image {
   width: auto;
-  height: 1500px;
+  height: 150px;
   font-size: 0.92857143rem;
 }
 
@@ -171,6 +180,7 @@ navbar a{
     font-size: .8em;
 }
 
+
 .text-medium {
     font-size: 0.9em;
 }
@@ -179,4 +189,3 @@ navbar a{
     margin-top: 3.5em;
     margin-bottom: 3.5em;
 }
-
