@@ -6,12 +6,14 @@
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
   <script src="js/semantic.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+  <link type="text/css" rel="stylesheet" href="css/icon.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
 
+
 <body>
       <!-- Header -->
-      <navbar class="ui menu inverted blue ">
+      <navbar id="top" class="ui menu inverted azul-oscuro-buap text-small">
           <div class="right menu">
             <a class="item" href="http://mail.office365.com/">Correo</a>
             <a class="item" href="http://webserver1.siiaa.siu.buap.mx:81/autoservicios/twbkwbis.P_GenMenu?name=<homepage></homepage>">Autoservicios</a>
@@ -36,80 +38,178 @@
           </div>
       </div>
 
-
+    <!-- Imagen de cabecera -->
       <div class="ui center aligned container ">
         <img src="images/coordinacion.jpg" alt="" width="80%" >
        <hr>
+      </div>
 
-           <div class="ui center aligned container">
+
+    <div class="ui center aligned container">
+    <!-- Profesores -->
+           <h1>Listado de Profesores</h1>
                <div class="ui equal width grid">
                   <div class="row">
+
                     <div class="column">
-                      <h2 class="ui icon header">
-                        <div class="ui simple dropdown item">
-                          <img class="ui centered image" src="images/listado_profesores.png" width="100px" height="100px"></img>
-                            <div class="content">
-                              Listado de Profesores <i class="dropdown icon"></i>
-                            </div>
-
-                            <div class="menu">
-                              <div class="item">
-                                <a href="http://secreacademica.cs.buap.mx/profesores/Coordinaciones_Comisiones_Laboratorios_2013.pdf">Coordinaciones -                                     comisiones - jefaturas</a>
-                            </div>
-                            <div class="item"><a href="http://secreacademica.cs.buap.mx/profesores/MATERIAS_X_AREAS_REVISION_102013.pdf">Por materia</a>                            </div>
-
-                            <div class="ui left pointing dropdown link item">
-                              Por área del conocimiento
-                              <!-- <i class="dropdown icon "></i>-->
-
-                              <div class="menu">
-                                  <div class="item"><a href="http://secreacademica.cs.buap.mx/profesores/AREA_PRIMARIA_12112012.pdf">Primarias</a></div>
-                                  <div class="item"><a href="http://secreacademica.cs.buap.mx/profesores/AREAS_SECUNDARIAS_12112012.pdf">Secundarias</a>                                 </div>
-                                  <div class="item"><a href="http://secreacademica.cs.buap.mx/profesores/AREAS_TERCIARIAS_12112012.pdf">Terciarias</a>                                   </div>
-                              </div>
-                            </div>
-
-                            <div class="item"><a href="http://secreacademica.cs.buap.mx/profesores/Profes_AreaConocimiento_28102013.pdf">Por antigüedad</a>                        </div>
-
-                            </div>
-                          </div>
-
-                      <hr>
-              </h2>
-
-          </div>
-          <div class="column">
-              <h2 class="ui icon header">
-                  <div class="ui simple dropdown item">
-                    <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
-                    <div class="content">
-                    Programacion Anual 2015 <i class="dropdown icon"></i>
-
-                      </div>
-
-                    <div class="menu">
-                      <div class="item">
-                          <a     href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/FormatoCarga_OTO2015.docx">Formato de Selección de Materias Otoño 2015</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V0.pdf">OTOÑO 2015 (Versión 0 - Sin Profesor - 28/05/2015)</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V1.pdf">OTOÑO 2015 (Versión 1 - Con Profesor - 08/06/2015)</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V2.pdf">OTOÑO 2015 (Versión 2 - De Banner - 12/06/2015)</a>
-                      </div>
+                      <h3 class="ui icon header">
+                        <div class="content" >
+                          <a class="item" href="http://secreacademica.cs.buap.mx/profesores/Coordinaciones_Comisiones_Laboratorios_2013.pdf">
+                            <img class="ui centered image" src="images/listado_profesores.png" width="100px" height="100px"></img>
+                            Coordinaciones Comisiones y Jefaturas
+                          </a>
+                        </div>
+                      </h3>
                     </div>
+
+                    <div class="column">
+                      <h3 class="ui icon header">
+                        <div class="content" >
+                          <a href="http://secreacademica.cs.buap.mx/profesores/MATERIAS_X_AREAS_REVISION_102013.pdf">
+                            <img class="ui centered image" src="images/listado_profesores.png"  width="100px" height="100px"></img>
+                            Por materia
+                          </a>
+                        </div>
+                      </h3>
+                    </div>
+
+                    <div class="column">
+                      <h3 class="ui icon header">
+                            <div class="content">
+                              <img class="ui centered image" src="images/listado_profesores.png" width="100px" height="100px"></img>
+                              <a href="#">Por area</a>
+                              <div class="menu">
+                                  <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREA_PRIMARIA_12112012.pdf">Primarias</a>
+                                  <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREAS_SECUNDARIAS_12112012.pdf">Secundarias</a>
+                                  <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREAS_TERCIARIAS_12112012.pdf">Terciarias</a>
+                              </div>
+                           </div>
+                     </h3>
+                    </div>
+
+                    <div class="column">
+                      <h3 class="ui icon header">
+                        <div class="content" >
+                          <a href="http://secreacademica.cs.buap.mx/profesores/Profes_AreaConocimiento_28102013.pdf">
+                            <img class="ui centered image" src="images/listado_profesores.png" width="100px" height="100px"></img>
+                            Por antigüedad
+                          </a>
+                        </div>
+                      </h3>
+                    </div>
+                </div>
+              </div>
+
+            <h1>Programación Anual</h1>
+              <div class="ui equal width grid">
+                <div class="row">
+
+                  <div class="column">
+                    <h3 class="ui icon header">
+                      <div class="content" >
+                        <a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/FormatoCarga_OTO2015.docx">
+                          <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
+                          Formato de Selección de Materias Otoño 2015
+                        </a>
+                      </div>
+                    </h3>
                   </div>
 
-                      <hr>
-              </h2>
+                  <div class="column">
+                    <h3 class="ui icon header">
+                      <div class="content" >
+                        <a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V0.pdf">
+                          <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
+                          OTOÑO 2015 Sin Profesor
+                        </a>
+                      </div>
+                    </h3>
+                  </div>
 
-          </div>
+                  <div class="column">
+                    <h3 class="ui icon header">
+                      <div class="content" >
+                        <a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V1.pdf">
+                          <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
+                          OTOÑO 2015 Con Profesor
+                        </a>
+                      </div>
+                    </h3>
+                  </div>
+
+                  <div class="column">
+                    <h3 class="ui icon header">
+                      <div class="content" >
+                        <a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V2.pdf">
+                          <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
+                          OTOÑO 2015 Para Carga
+                        </a>
+                      </div>
+                    </h3>
+                  </div>
+
+                </div>
+              </div>
+
+            <h1>Procesos</h1>
+            <div class="ui equal width grid">
+              <div class="row">
+
+                <div class="column">
+                  <h3 class="ui icon header">
+                        <div class="content">
+                          <img class="ui centered image" src="images/proceso_prodep.png" width="100px" height="100px"></img>
+                          <a href="#">Proceso Prodep 2015</a>
+                          <div class="menu">
+                              <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREA_PRIMARIA_12112012.pdf">Primarias</a>
+                              <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREAS_SECUNDARIAS_12112012.pdf">Secundarias</a>
+                              <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREAS_TERCIARIAS_12112012.pdf">Terciarias</a>
+                          </div>
+                       </div>
+                 </h3>
+                </div>
+
+                <div class="column">
+                  <h3 class="ui icon header">
+                        <div class="content">
+                          <img class="ui centered image" src="images/proceso_prodep.png" width="100px" height="100px"></img>
+                          <a href="#">Proceso PRODEP 2015</a>
+                          <div class="menu">
+                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_Actualizacion_03022015.pdf">Actualización de PAs</a>
+                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPE_03022015.pdf">Creación de PE</a>
+                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPAITI_03022015.pdf">Creación de PAs ITI</a>
+                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPA_03022015.pdf">Creación de PAs MUM</a>
+                          </div>
+                       </div>
+                 </h3>
+                </div>
+
+                <div class="column">
+                  <h3 class="ui icon header">
+                        <div class="content">
+                          <img class="ui centered image" src="images/proceso_prodep.png" width="100px" height="100px"></img>
+                          <a href="#">Proceso ESDEP 2014</a>
+                          <div class="menu">
+                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_Actualizacion_03022015.pdf">Actualización de PAs</a>
+                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPE_03022015.pdf">Creación de PE</a>
+                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPAITI_03022015.pdf">Creación de PAs ITI</a>
+                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPA_03022015.pdf">Creación de PAs MUM</a>
+                          </div>
+                       </div>
+                 </h3>
+                </div>
+
+              </div>
+            </div>
+
+
+
          <div class="column">
               <h2 class="ui icon header">
                   <div class="ui simple dropdown item">
                     <img class="ui centered image" src="images/proceso_prodep.png" width="100px" height="100px"></img>
                     <div class="content">
-                     Proceso Prodep 2015  <i class="dropdown icon"></i>
+                       <i class="dropdown icon"></i>
 
                       </div>
 
