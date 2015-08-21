@@ -11,6 +11,7 @@ navbar a{
 }
 
 #foot{
+    display: block;
     bottom: 0px;
     position: absolute;
     width: 100%;
@@ -85,5 +86,68 @@ navbar a{
 
 .panel.centro{  
     width: 400px; 
+}
+
+.ui.huge.images.inverted .image,
+.ui.huge.images.inverted img,
+.ui.huge.images.inverted svg,
+.ui.huge.image.inverted {
+  width: auto;
+  height: 800px;
+  font-size: 1.42857143rem;
+}
+
+.ui.big.images.inverted .image,
+.ui.big.images.inverted img,
+.ui.big.images.inverted svg,
+.ui.big.image.inverted {
+  width: auto;
+  height: 600px;
+  font-size: 1.28571429rem;
+}
+
+.ui.large.images.inverted .image,
+.ui.large.images.inverted img,
+.ui.large.images.inverted svg,
+.ui.large.image.inverted {
+  width: auto;
+  height: 451px;
+  font-size: 1.14285714rem;
+}
+
+.ui.mini.images.inverted .image,
+.ui.mini.images.inverted img,
+.ui.mini.images.inverted svg,
+.ui.mini.image.inverted {
+  width: auto;
+  height: 35px;
+  font-size: 0.71428571rem;
+}
+
+.ui.tiny.images.inverted .image,
+.ui.tiny.images.inverted img,
+.ui.tiny.images.inverted svg,
+.ui.tiny.image.inverted {
+  width: auto;
+  height: 80px;
+  font-size: 0.85714286rem;
+}
+
+.ui.small.images .image,
+.ui.small.images img,
+.ui.small.images svg,
+.ui.small.image {
+  width: auto;
+  height: 1500px;
+  font-size: 0.92857143rem;
+}
+
+.ui.medium.images .image,
+.ui.medium.images img,
+.ui.medium.images svg,
+.ui.medium.image {
+  width: auto;
+  height: 300px;
+  font-size: 1rem;
 }
 
