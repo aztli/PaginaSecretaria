@@ -27,34 +27,6 @@
               <img class="ui mini image" src="images/logo_FCC.png">
             </a>
 
-            <div class="right menu ">
-              <a class="item" href="http://www.cs.buap.mx/~secreacademica/profesores.html">Profesores</a>
-              <a class="item" href="http://www.cs.buap.mx/~secreacademica/alumnos.html">Alumnos</a>
-              <a class="item" href="http://www.cs.buap.mx/~secreacademica/planes.html">Plan de estudios</a>
-              <a class="item" href="http://www.cs.buap.mx/~secreacademica/cua.html">Actas CUA</a>
-              <a class="item" href="http://www.cs.buap.mx/">FCC</a>
-            </div>
-        </div>
-
-         <div class="ui grid">
-            <div class="left floated six wide column">
-                <img class="ui centered medium image" src="images/logo_buap.jpg">
-            </div>
-
-            <div class="right floated six wide column right aligned ">
-              <div class="ui row inverted blue vertical menu">
-                  <input class="active item" name="campo" type="text" value="Buscar">
-                  <a class="item" href="http://www.buap.mx/">BUAP</a>
-                  <a class="item" href="http://www.cs.buap.mx/">FCC</a>
-                  <a class="item" href="http://calidadfcc.cs.buap.mx//">Acreditación</a>
-                  <a class="item" href="http://ces.cs.buap.mx/">Comisión de Evaluación y Seg. Curri.</a>
-                  <a class="item" href="http://www.escolar.buap.mx/">Administración Escolar</a>
-                  <a class="item" href="http://cmas.siu.buap.mx/portal_pprd/wb/DGES/inicio">DGES</a>
-              </div>
-            </div>
-         </div>
-
-
             <div class="right menu text-medium">
               <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/~secreacademica/profesores.html">Profesores</a>
               <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/~secreacademica/alumnos.html">Alumnos</a>
@@ -63,6 +35,8 @@
               <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
             </div>
         </div>
+
+      </div>
 
     <!-- Inicio: imagenes y plugin de facebook-->
      <div class="ui vertical segment">
@@ -122,7 +96,25 @@
                         </script>
                  </div>
                  <div class="right aligned column">
-                     <p>Aquí va el plugin para facebook</p>
+
+                   <div id="fb-root"></div>
+                   <script>(function(d, s, id) {
+                     var js, fjs = d.getElementsByTagName(s)[0];
+                     if (d.getElementById(id)) return;
+                     js = d.createElement(s); js.id = id;
+                     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+                     fjs.parentNode.insertBefore(js, fjs);
+                   }(document, 'script', 'facebook-jssdk'));</script>
+
+                   <div class="fb-page" data-href="https://www.facebook.com/aztlilinux" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
+                     <div class="fb-xfbml-parse-ignore">
+                       <blockquote cite="https://www.facebook.com/aztlilinux">
+                         <a href="https://www.facebook.com/aztlilinux">Aztli</a>
+                       </blockquote>
+                     </div>
+                   </div>
+
+
                      <i class="icon facebook"></i>
                  </div>
              </div>
