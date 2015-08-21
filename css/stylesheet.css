@@ -167,3 +167,7 @@ navbar a{
     color: #009ec0 !important;
 }
 
+.text-small {
+    font-size: .8em;
+}
+
