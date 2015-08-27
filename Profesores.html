@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Profesores</title>
+  <title>Secretaria Academica FCC</title>
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   <script src="js/semantic.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
   <link type="text/css" rel="stylesheet" href="css/icon.css">
@@ -24,490 +25,90 @@
       <div class="ui container">
 
           <div class="ui borderless secondary menu ">
-              <a href="http://www.cs.buap.mx/~secreacademica/" class="ui left header item">
+              <a href="index.html" class="ui left header item">
                 <img class="ui mini image" src="images/logo_FCC.png">
               </a>
 
               <div class="right menu text-medium">
-                <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/~secreacademica/profesores.html">Profesores</a>
-                <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/~secreacademica/alumnos.html">Alumnos</a>
-                <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/~secreacademica/planes.html">Plan de estudios</a>
-                <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/~secreacademica/cua.html">Actas CUA</a>
+                <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
+                <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
+                <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
+                <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
                 <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
               </div>
           </div>
       </div>
 
+      <br>
+      <div class="ui container">
 
 
-    <div class="ui center aligned container">
-    <!-- Profesores -->
-           <h1>Listado de Profesores</h1>
-               <div class="ui equal width grid">
-                  <div class="row">
+      <!-- Comienzo de Tabs -->
+      <div class="ui tabular menu">
+        <div class="active item" data-tab="Listado">Listado</div>
+        <div class="item" data-tab="Procesos">Procesos</div>
+        <div class="item" data-tab="Formatos">Formatos</div>
+        <div class="item" data-tab="Programacion">Programacion Anual</div>
+      </div>
 
-                    <div class="column">
-                      <h3 class="ui icon header">
-                        <div class="content" >
-                          <a class="item" href="http://secreacademica.cs.buap.mx/profesores/Coordinaciones_Comisiones_Laboratorios_2013.pdf">
-                            <img class="ui centered image" src="images/listado_profesores.png" width="100px" height="100px"></img>
-                            Coordinaciones Comisiones y Jefaturas
-                          </a>
-                        </div>
-                      </h3>
-                    </div>
-
-                    <div class="column">
-                      <h3 class="ui icon header">
-                        <div class="content" >
-                          <a href="http://secreacademica.cs.buap.mx/profesores/MATERIAS_X_AREAS_REVISION_102013.pdf">
-                            <img class="ui centered image" src="images/listado_profesores.png"  width="100px" height="100px"></img>
-                            Por materia
-                          </a>
-                        </div>
-                      </h3>
-                    </div>
-
-                    <div class="column">
-                      <h3 class="ui icon header">
-                            <div class="content">
-                              <img class="ui centered image" src="images/listado_profesores.png" width="100px" height="100px"></img>
-                              <a href="#">Por area</a>
-                              <div class="menu">
-                                  <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREA_PRIMARIA_12112012.pdf">Primarias</a>
-                                  <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREAS_SECUNDARIAS_12112012.pdf">Secundarias</a>
-                                  <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREAS_TERCIARIAS_12112012.pdf">Terciarias</a>
-                              </div>
-                           </div>
-                     </h3>
-                    </div>
-
-                    <div class="column">
-                      <h3 class="ui icon header">
-                        <div class="content" >
-                          <a href="http://secreacademica.cs.buap.mx/profesores/Profes_AreaConocimiento_28102013.pdf">
-                            <img class="ui centered image" src="images/listado_profesores.png" width="100px" height="100px"></img>
-                            Por antigüedad
-                          </a>
-                        </div>
-                      </h3>
-                    </div>
-                </div>
-              </div>
-
-            <h1>Programación Anual</h1>
-              <div class="ui equal width grid">
-                <div class="row">
-
-                  <div class="column">
-                    <h3 class="ui icon header">
-                      <div class="content" >
-                        <a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/FormatoCarga_OTO2015.docx">
-                          <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
-                          Formato de Selección de Materias Otoño 2015
-                        </a>
-                      </div>
-                    </h3>
-                  </div>
-
-                  <div class="column">
-                    <h3 class="ui icon header">
-                      <div class="content" >
-                        <a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V0.pdf">
-                          <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
-                          OTOÑO 2015 Sin Profesor
-                        </a>
-                      </div>
-                    </h3>
-                  </div>
-
-                  <div class="column">
-                    <h3 class="ui icon header">
-                      <div class="content" >
-                        <a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V1.pdf">
-                          <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
-                          OTOÑO 2015 Con Profesor
-                        </a>
-                      </div>
-                    </h3>
-                  </div>
-
-                  <div class="column">
-                    <h3 class="ui icon header">
-                      <div class="content" >
-                        <a href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/OTONO2015_V2.pdf">
-                          <img class="ui centered image" src="images/programacion_anul.png" width="100px" height="100px"></img>
-                          OTOÑO 2015 Para Carga
-                        </a>
-                      </div>
-                    </h3>
-                  </div>
-
-                </div>
-              </div>
-
-            <h1>Procesos</h1>
-            <div class="ui equal width grid">
-              <div class="row">
-
-                <div class="column">
-                  <h3 class="ui icon header">
-                        <div class="content">
-                          <img class="ui centered image" src="images/proceso_prodep.png" width="100px" height="100px"></img>
-                          <a href="#">Proceso Prodep 2015</a>
-                          <div class="menu">
-                              <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREA_PRIMARIA_12112012.pdf">Primarias</a>
-                              <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREAS_SECUNDARIAS_12112012.pdf">Secundarias</a>
-                              <a class="item" href="http://secreacademica.cs.buap.mx/profesores/AREAS_TERCIARIAS_12112012.pdf">Terciarias</a>
-                          </div>
-                       </div>
-                 </h3>
-                </div>
-
-                <div class="column">
-                  <h3 class="ui icon header">
-                        <div class="content">
-                          <img class="ui centered image" src="images/proceso_prodep.png" width="100px" height="100px"></img>
-                          <a href="#">Proceso PRODEP 2015</a>
-                          <div class="menu">
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_Actualizacion_03022015.pdf">Actualización de PAs</a>
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPE_03022015.pdf">Creación de PE</a>
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPAITI_03022015.pdf">Creación de PAs ITI</a>
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPA_03022015.pdf">Creación de PAs MUM</a>
-                          </div>
-                       </div>
-                 </h3>
-                </div>
-
-                <div class="column">
-                  <h3 class="ui icon header">
-                        <div class="content">
-                          <img class="ui centered image" src="images/proceso_prodep.png" width="100px" height="100px"></img>
-                          <a href="#">Proceso ESDEP 2014</a>
-                          <div class="menu">
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_Actualizacion_03022015.pdf">Actualización de PAs</a>
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPE_03022015.pdf">Creación de PE</a>
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPAITI_03022015.pdf">Creación de PAs ITI</a>
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPA_03022015.pdf">Creación de PAs MUM</a>
-                          </div>
-                       </div>
-                 </h3>
-                </div>
-
-              </div>
-            </div>
-
-
-
-         <div class="column">
-              <h2 class="ui icon header">
-                  <div class="ui simple dropdown item">
-                    <img class="ui centered image" src="images/proceso_prodep.png" width="100px" height="100px"></img>
-                    <div class="content">
-                       <i class="dropdown icon"></i>
-
-                      </div>
-
-                    <div class="menu">
-
-                      <div class="ui left pointing dropdown link item">
-                        Gestión Académica
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-                             <div class="item">
-                              <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_Actualizacion_03022015.pdf">Actualización de PAs</a>
-                      </div>
-                      <div class="item">
-                          <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPE_03022015.pdf">Creación de PE</a>
-                      </div>
-                      <div class="item">
-                          <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPAITI_03022015.pdf">Creación de PAs ITI</a>
-                      </div>
-                      <div class="item">
-                          <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/GestionAcademica_CreacionPA_03022015.pdf">Creación de PAs MUM</a>
-                      </div>
-
-                          </div>
-
-                      </div>
-
-                      <div class="ui left pointing dropdown link item">
-                        REVISORES Experiencia Profesional
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-                             <div class="item">
-                                 <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/EXPERIENCIAPROFESIONAL_2013.pdf">2013</a>
-                             </div>
-                             <div class="item">
-                                 <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/EXPERIENCIAPROFESIONAL_2014.pdf">2014</a>
-                             </div>
-                          </div>
-                      </div>
-
-                      <div class="ui left pointing dropdown link item">
-                        Titulados
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-                             <div class="item">
-                          <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/TITULADOS2012_19022015.pdf">2012 (Tesis, Tesina)</a>
-                      </div>
-                      <div class="item">
-                          <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/TITULADOS2013_19022015.pdf">2013 (Tesis, Tesina)</a>
-                      </div>
-                      <div class="item">
-                          <a href="http://www.cs.buap.mx/~secreacademica/profesores/PRODEP15/TITULADOS2014_19022015.pdf">2014 (Tesis, Tesina)</a>
-                      </div>
-                          </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                      <hr>
-              </h2>
-
-          </div>
-
-
-
+      <div class="ui active tab" data-tab="Listado">
+      <!-- Tab Content !-->
+        <div class="ui container equal width grid">
+          <h1>hola!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur voluptatem a asperiores esse vero reiciendis animi. Nesciunt illo enim iusto distinctio optio voluptates aliquam labore ea architecto. Inventore, qui.</p>
+          <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, voluptatem ipsam inventore obcaecati vel ipsa tempora, accusamus earum, sequi perspiciatis consequuntur fugit doloribus eaque neque dolores. Suscipit ullam saepe maxime?</span>
+          <span>Aut doloremque molestias minima totam officia distinctio qui nesciunt. Excepturi, fuga, totam! Nemo aperiam, quaerat natus saepe at sunt, voluptate aliquid esse nihil libero, modi quidem pariatur eos, vero facere!</span>
+          <span>Ut quam, dolor, odit harum voluptatem nostrum tenetur, tempore, similique architecto laborum illo facere quae sed non. Rem hic quod similique distinctio, maxime officia, blanditiis, natus, sequi quasi alias suscipit!</span>
+          <span>Laudantium aliquid fugit nostrum ullam labore blanditiis nam repudiandae modi quidem voluptates deleniti reiciendis sunt, laboriosam non nihil, minima nemo nulla commodi optio vel a eaque fugiat. Distinctio, cumque, nobis.</span>
+          <span>Reiciendis animi in quidem, excepturi nemo asperiores accusamus maiores quia, nihil, dolor facere suscipit voluptates sint necessitatibus minima magnam atque. Tempore quo dignissimos totam eum rerum amet nihil optio illo.</span></p>
         </div>
+      </div>
 
-
-
-        <!-- segunda columna -->
-
-        <div class="row">
-
-
-
-          <div class="column">
-              <h2 class="ui icon header">
-                  <div class="ui simple dropdown item">
-                    <img class="ui centered image" src="images/proceso_esdeped.png" width="100px" height="100px"></img>
-                    <div class="content">
-                    Proceso Esdeped 2014  <i class="dropdown icon"></i>
-                      </div>
-
-                    <div class="menu">
-                       <div class="ui left pointing dropdown link item">
-                        Titulación Tesis-Tesina
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Titulados_Tesis_Tesina_2012.pdf">2012 (Resumen)</a></div>
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Titulados_Tesis_Tesina_2013.pdf">2013 (Resumen)</a></div>
-                          </div>
-                      </div>
-
-                      <div class="ui left pointing dropdown link item">
-                        Ceneval
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Ceneval_2012.pdf">2012 (Pantallas - Actualizado 17/02/14)</a></div>
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Ceneval_2013.pdf">2013 (Pantallas - Actualizado 17/02/14)</a></div>
-                          </div>
-                      </div>
-
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Tesis2012_2013.pdf">Tesis - Tesinas 2012 - 2013 <br>(Pantallas -Actualizado 17/02/2014)</a></div>
-
-                      <div class="ui left pointing dropdown link item">
-                        Departamentales
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Departamentales_2012.pdf">2012 (Pantallas -Actualizado 18/02/2014)</a></div>
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Departamentales_2013.pdf">2013 (Pantallas -Actualizado 18/02/2014)</a></div>
-                          </div>
-                      </div>
-
-                      <div class="ui left pointing dropdown link item">
-                        Practicas Profesionales
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/PracticasProf_2012.pdf">2012 (Pantallas -Actualizado 18/02/2014)</a></div>
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/PracticasProf_2013.pdf">2013 (Pantallas -Actualizado 18/02/2014)</a></div>
-                          </div>
-                      </div>
-
-                      <div class="ui left pointing dropdown link item">
-                        Eventos
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/UA_Eventos2012_2013.pdf">2012-2013(Pantallas)</a></div>
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Eventos_2012_detalle.pdf">2012 (Detallado)</a></div>
-                              <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/Eventos_2013_detalle.pdf">2013 (Detallado)</a></div>
-                          </div>
-                      </div>
-
-                      <div class="item"><a href="">3.2.1.20_DGES (Pantallas)</a></div>
-
-                      <div class="item"><a href="">3.5.26 Acreditacion de la Ing. en Ciencias <br>de la Computación (Pantallas)</a></div>
-
-                    </div>
-                  </div>
-
-                      <hr>
-              </h2>
-
-          </div>
-          <div class="column">
-              <h2 class="ui icon header">
-                  <div class="ui simple dropdown item">
-                    <img class="ui centered image" src="images/formatos_pa_2011.png" width="100px" height="100px"></img>
-                    <div class="content">
-                    Formatos PA 2011    <i class="dropdown icon"></i>
-                      </div>
-
-                    <div class="menu">
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/FORMATO_PA_2011.docx">Formato PA 2011</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/INSTRUCTIVO_PA_2011.pdf">Instructivo PA 2011</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/EJES_TRANS_2012.pdf">Ejemplo de Ejes Transversales</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/MODELOS_EDITORIALES_2011.pdf">Modelos Editoriales</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/GUIA_TECNICA_REVISION_DGES.docx">Guia Técnica Revisión DGES</a>
-                      </div>
-
-                      <div class="ui left pointing dropdown link item">
-                        Ejemplo Revisión
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-			                <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/REVISION_PROG_ALGEBRA_SUPERIOR.docx">Prog. Algebra Superior</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/REVISION_PROG_CIRCUITOS_ELEC.docx">Prog. Circuitos Eléctricos</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/REVISION_PROG_ING_SOFT.docx">Ing. de Software</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/FormatosPA2011/REVISION_PROGRAMACIONII.docx">Programación II</a></div>
-                          </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                      <hr>
-              </h2>
-
-          </div>
-              <h2 class="ui icon header">
-                  <div class="ui simple dropdown item">
-                    <img class="ui centered image" src="images/proceso_esdeped.png" width="100px" height="100px"></img>
-                    <div class="content">
-                    Proceso Promep 2014  <i class="dropdown icon"></i>
-
-                      </div>
-
-                    <div class="menu">
-
-                      <div class="ui left pointing dropdown link item">
-                        Gestión Academica
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-			                <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/PROMEP2014/GestionAcademica_Actualizacion_PAs_06022014.pdf">Actualización de PAs (06/02/2014)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/PROMEP2014/GestionAcademica_CreacionPE_06022014.pdf">Creación de PE (06/02/2014)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/PROMEP2014/GestionAcademica_Creacion_NuevosPAs_ITI_06022014.pdf">Creación de PAs ITI (06/02/2014)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/PROMEP2014/GestionAcademica_Creacion_NuevosPAs_MUM_06022014.pdf">Creación de PAs MUM (06/02/2014)</a></div>
-                          </div>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ESDEPED2014/TITULADOS2011.pdf">Titulación Tesis-Tesina 2011 (Resumen)</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/PROMEP2014/EXPERIENCIAPROFESIONAL.pdf">REVISORES Experiencia Profesional 2013 <br>(10/02/2014)</a>
-                      </div>
-
-                    </div>
-                  </div>
-
-                      <hr>
-              </h2>
-
-          </div>
-
-
+      <div class="ui tab" data-tab="Procesos">
+        <!-- Tab Content !-->
+        <div class="ui container equal width grid">
+          <h1>PRODEP 2015</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur voluptatem a asperiores esse vero reiciendis animi. Nesciunt illo enim iusto distinctio optio voluptates aliquam labore ea architecto. Inventore, qui.</p>
+          <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, voluptatem ipsam inventore obcaecati vel ipsa tempora, accusamus earum, sequi perspiciatis consequuntur fugit doloribus eaque neque dolores. Suscipit ullam saepe maxime?</span>
+          <span>Aut doloremque molestias minima totam officia distinctio qui nesciunt. Excepturi, fuga, totam! Nemo aperiam, quaerat natus saepe at sunt, voluptate aliquid esse nihil libero, modi quidem pariatur eos, vero facere!</span>
+          <span>Ut quam, dolor, odit harum voluptatem nostrum tenetur, tempore, similique architecto laborum illo facere quae sed non. Rem hic quod similique distinctio, maxime officia, blanditiis, natus, sequi quasi alias suscipit!</span>
+          <span>Laudantium aliquid fugit nostrum ullam labore blanditiis nam repudiandae modi quidem voluptates deleniti reiciendis sunt, laboriosam non nihil, minima nemo nulla commodi optio vel a eaque fugiat. Distinctio, cumque, nobis.</span>
+          <span>Reiciendis animi in quidem, excepturi nemo asperiores accusamus maiores quia, nihil, dolor facere suscipit voluptates sint necessitatibus minima magnam atque. Tempore quo dignissimos totam eum rerum amet nihil optio illo.</span></p>
         </div>
-        <div class="row">
-           <div class="column">
-              <h2 class="ui icon header">
-                  <div class="ui simple dropdown item">
-                    <img class="ui centered image" src="images/formatos_pa_2011.png" width="100px" height="100px"></img>
-                    <div class="content">
-                    ACTUALIZACIÓN PA's <br>en Formato 2011
-                       <i class="dropdown icon"></i>
+      </div>
 
-                      </div>
-
-                    <div class="menu">
-
-                        <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/PRESENTACION_ACTUALIZACION_PA.pdf">Presentacion Actualizacion PA's a Formato 2011</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/PAs_EN_VERDE.rar">Programas de Asignatura en VERDE</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/PAs_EN_AMARILLO.rar">Fichas Revisión PAs en AMARILLO</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/FORMATO_NOMBRE_ARCHIVOS.pdf">Formato del Nombre de los Archivos</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/REVISION_PAS_ICCyCCO_120515.pdf">STATUS PAs ICC y CCO (Actualizado 12/05/2015)</a>
-                      </div>
-                      <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/REVISION_PAS_ITI_120515.pdf">STATUS PAs ITI (Actualizado 12/05/2015)</a>
-                      </div>
-                      <div class="ui left pointing dropdown link item">
-                        PA's ICC y CCO Enviados a la DGES
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-			                <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/Acta_CDESCUA_28112011.PDF">(28/11/2011)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/Acta_CDESCUA_29062012.PDF">(29/06/2012)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/Oficio_VD.pdf">(19/02/2013)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/2_Oficio_DGES.pdf">(17/04/2013)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/3_Oficio_VD.pdf">(30/04/2013)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/4_Oficio_VD.pdf">(05/06/2013)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/Oficio_DGES_21012014.pdf">(21/01/2014)</a></div>
-                          </div>
-                      </div>
-                      <div class="ui left pointing dropdown link item">
-                        PA's ITI Enviados a la DGES
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-			                <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/2_Oficio_VD.pdf">(17/04/2013)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/Oificio_DGES_ITI_20012014.pdf">(21/01/2014)</a></div>
-                          </div>
-                      </div>
-                      <div class="ui left pointing dropdown link item">
-                        Matriz 4
-                        <!-- <i class="dropdown icon "></i>-->
-
-                          <div class="menu">
-			                <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/M4_ICC_02052013.pdf">ICC (02/05/2013)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/M4_CCO_02052013.pdf">CCO (02/05/2013)</a></div>
-                            <div class="item"><a href="http://www.cs.buap.mx/~secreacademica/profesores/ACTUALIZACION_PA_2011/M4_ITI_02052013.pdf">ITI (02/05/2013)</a></div>
-                          </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                      <hr>
-              </h2>
-
-          </div>
-
-
-
+      <div class="ui tab" data-tab="Formatos">
+        <!-- Tab Content !-->
+        <div class="ui container equal width grid">
+          <h1>PRODEP 2015</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur voluptatem a asperiores esse vero reiciendis animi. Nesciunt illo enim iusto distinctio optio voluptates aliquam labore ea architecto. Inventore, qui.</p>
+          <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, voluptatem ipsam inventore obcaecati vel ipsa tempora, accusamus earum, sequi perspiciatis consequuntur fugit doloribus eaque neque dolores. Suscipit ullam saepe maxime?</span>
+          <span>Aut doloremque molestias minima totam officia distinctio qui nesciunt. Excepturi, fuga, totam! Nemo aperiam, quaerat natus saepe at sunt, voluptate aliquid esse nihil libero, modi quidem pariatur eos, vero facere!</span>
+          <span>Ut quam, dolor, odit harum voluptatem nostrum tenetur, tempore, similique architecto laborum illo facere quae sed non. Rem hic quod similique distinctio, maxime officia, blanditiis, natus, sequi quasi alias suscipit!</span>
+          <span>Laudantium aliquid fugit nostrum ullam labore blanditiis nam repudiandae modi quidem voluptates deleniti reiciendis sunt, laboriosam non nihil, minima nemo nulla commodi optio vel a eaque fugiat. Distinctio, cumque, nobis.</span>
+          <span>Reiciendis animi in quidem, excepturi nemo asperiores accusamus maiores quia, nihil, dolor facere suscipit voluptates sint necessitatibus minima magnam atque. Tempore quo dignissimos totam eum rerum amet nihil optio illo.</span></p>
         </div>
+      </div>
 
-
+      <div class="ui tab" data-tab="Programacion">
+        <!-- Tab Content !-->
+        <div class="ui container equal width grid">
+          <h1>PRODEP 2015</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur voluptatem a asperiores esse vero reiciendis animi. Nesciunt illo enim iusto distinctio optio voluptates aliquam labore ea architecto. Inventore, qui.</p>
+          <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, voluptatem ipsam inventore obcaecati vel ipsa tempora, accusamus earum, sequi perspiciatis consequuntur fugit doloribus eaque neque dolores. Suscipit ullam saepe maxime?</span>
+          <span>Aut doloremque molestias minima totam officia distinctio qui nesciunt. Excepturi, fuga, totam! Nemo aperiam, quaerat natus saepe at sunt, voluptate aliquid esse nihil libero, modi quidem pariatur eos, vero facere!</span>
+          <span>Ut quam, dolor, odit harum voluptatem nostrum tenetur, tempore, similique architecto laborum illo facere quae sed non. Rem hic quod similique distinctio, maxime officia, blanditiis, natus, sequi quasi alias suscipit!</span>
+          <span>Laudantium aliquid fugit nostrum ullam labore blanditiis nam repudiandae modi quidem voluptates deleniti reiciendis sunt, laboriosam non nihil, minima nemo nulla commodi optio vel a eaque fugiat. Distinctio, cumque, nobis.</span>
+          <span>Reiciendis animi in quidem, excepturi nemo asperiores accusamus maiores quia, nihil, dolor facere suscipit voluptates sint necessitatibus minima magnam atque. Tempore quo dignissimos totam eum rerum amet nihil optio illo.</span></p>
         </div>
+      </div>
 
+     <!--Script de tabs-->
+      <script type="text/javascript">
+        $('.tabular.menu .item').tab();
+      </script>
 
-        </div>
-
+</div>
 
      <!--Footer-->
      <div class="ui inverted footer vertical segment azul-oscuro-buap text-small">
