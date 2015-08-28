@@ -197,16 +197,15 @@ navbar a{
 }
 
 .circulos{
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 0;
-  padding: 50% 0;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  background: #38a9e4;
+  background: #003B5C;
   color: white;
-  font-family: Helvetica, Arial Black, sans;
-  font-size: 48px;
-  text-align: center;
 
+}
+
+.circulos p{
+   line-height: 250px;
+   text-align: center;
 }
