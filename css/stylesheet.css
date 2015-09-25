@@ -197,15 +197,7 @@ navbar a{
 }
 
 .circulos{
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: #003B5C;
-  color: white;
+  width: 175px;
+  height: 175px;
 
-}
-
-.circulos p{
-   line-height: 250px;
-   text-align: center;
 }
