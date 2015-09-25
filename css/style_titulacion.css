@@ -1,0 +1,122 @@
+/* Global */
+ 
+
+
+
+img { 
+    height: 60%;
+    width: 60%;
+      
+}
+
+a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+	}
+    a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+
+/* Container */
+.container-fluid {
+    background: #ffffff;
+    margin: 40px auto 10px;
+    padding: 20px 0px;
+    max-width: 960px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid2 {
+    background: #ffffff;
+    margin: 40px auto 10px;
+    padding: 20px 0px;
+    max-width: 960px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Header */
+.page-header {
+    background: #009EC0;
+    margin: -30px 0px 0px;
+    padding: 20px 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    }
+    .page-header h3 {
+        line-height: 0.88rem;
+        color: #a83b3b;
+        }
+
+
+
+/* Thumbnail Box */
+.caption {
+    height: 140px;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.caption .span4, .caption .span8 {
+    padding: 0px 20px;
+}
+.caption .span4 {
+    border-right: 1px dotted #CCCCCC;
+}
+.caption h3 {
+    color: #a83b3b;
+    line-height: 2rem;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    }
+    .caption p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: #a83b3b;
+        }
+        .btn.btn-mini {
+            background: #a83b3b;
+            border-radius: 0 0 0 0;
+            color: #fbf4e0;
+            font-size: 0.63rem;
+            text-shadow: none !important;
+            }
+.carousel-control {
+    top: 33%;
+    background: #009EC0;
+}
+
+.carousel2-control {
+    top: 33%;
+    background: #009EC0;
+}
+
+
+
+
+
+/* Footer */
+
+
+
+
+
+/* ADD-ON
+-------------------------------------------------- */
+
+
+::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }
+::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+a, a:focus, a:active, a:hover, object, embed { outline: none; }
+:-moz-any-link:focus { outline: none; }
+input::-moz-focus-inner { border: 0; }
