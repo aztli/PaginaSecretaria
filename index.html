@@ -38,159 +38,7 @@
         </div>
 
       </div>
-
-    <!-- Inicio: imagenes y plugin de facebook-->
-     <div class="ui vertical segment">
-         <div class="ui stackable center aligned page grid">
-             <div class="two column center row">
-                 <div class="column center aligned">
-                     <div class="ui shape">
-                         <div class="sides">
-                             <div class="second side">
-                                 <img class="ui large image" src="images/Calendario_Oto15.png">
-                             </div>
-                             <div class="active first side">
-                                 <img class="ui large image inverted" src="images/calendario_profesional_2015.jpg">
-                             </div>
-                         </div>
-                     </div>
-                     <div class="ui ignored hidden divider"></div>
-                     <div class="ui ignored icon direction buttons">
-                         <div data-direction="over" data-animation="flip" title="Anterior" class="ui button" data-shape="square"><i class="arrow left icon"></i></div>
-                         <div data-direction="back" data-animation="flip" title="Siguiente" class="ui button" data-shape="square"><i class="arrow right icon"></i></div>
-                     </div>
-                     <script type="text/javascript">
-                         $(document)
-                             .ready(function() {
-                             var
-                             $demo = $('.ui.shape'),
-                             $directionButton = $('.direction .button'),
-                             handler
-                             ;
-                        // event handlers
-                            handler = {
-                                rotate: function() {
-                                    var
-                                    $shape    = $(this).closest('.buttons').prevAll('.ui.shape').eq(0),
-                                    direction = $(this).data('direction') || false,
-                                    animation = $(this).data('animation') || false
-                                    ;
-                                    if(direction && animation) {
-                                        $shape
-                                        .shape(animation + '.' + direction)
-                                        ;
-                                    }
-                                }
-                            };
-                        // attach events
-                            $demo
-                                .shape()
-                            ;
-                            $directionButton
-                                .on('click', handler.rotate)
-                                .popup({
-                                position  : 'bottom center'
-                            })
-                            ;
-                         })
-                         ;
-                        </script>
-                 </div>
-                 <div class="right aligned column">
-
-                   <div id="fb-root"></div>
-                    <script>(function(d, s, id) {
-                      var js, fjs = d.getElementsByTagName(s)[0];
-                      if (d.getElementById(id)) return;
-                      js = d.createElement(s); js.id = id;
-                      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-                      fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));</script>
-
-                   <div class="fb-page" data-href="https://www.facebook.com/pages/FCC-Secretar%C3%ADa-acad%C3%A9mica/113367745423678" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-                     <div class="fb-xfbml-parse-ignore">
-                       <blockquote cite="https://www.facebook.com/pages/FCC-Secretar%C3%ADa-acad%C3%A9mica/113367745423678">
-                         <a href="https://www.facebook.com/pages/FCC-Secretar%C3%ADa-acad%C3%A9mica/113367745423678">FCC Secretaría académica</a>
-                       </blockquote>
-                     </div>
-                   </div>
-
-                 </div>
-             </div>
-         </div>
-    </div>
-
-    <!-- Esto solo se ve bien en chromium-->
-    <!--
- <section id="inicio" class="grisclaro">
-        <div class="ui container">
-            <div  class="ui two column center aligned stackable doubling grid">
-                <div id="shapeImages" class="center aligned column">
-                    <div class="ui shape">
-                        <div class="sides">
-                            <div class="second side">
-                                <img class="ui large image" src="images/Calendario_Oto15.png">
-                            </div>
-                            <div class="active first side">
-                                <img class="ui large image inverted" src="images/calendario_profesional_2015.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui ignored hidden divider"></div>
-                    <div class="ui ignored icon direction buttons">
-                        <div data-direction="over" data-animation="flip" title="Anterior" class="ui button" data-shape="square"><i class="arrow left icon"></i></div>
-                        <div data-direction="back" data-animation="flip" title="Siguiente" class="ui button" data-shape="square"><i class="arrow right icon"></i></div>
-                    </div>
-                </div>
-                <div clas="center aligned column">
-                    <p>Aquí va el plugin para facebook</p>
-                    <img src="images/minerva_icon.png" class="medium image"></div>
-
-                <script type="text/javascript">
-                    $(document)
-                        .ready(function() {
-                        var
-                        $demo = $('.ui.shape'),
-                        $directionButton = $('.direction .button'),
-                        handler
-                        ;
-                        // event handlers
-                        handler = {
-                            rotate: function() {
-                                var
-                                $shape    = $(this).closest('.buttons').prevAll('.ui.shape').eq(0),
-                                direction = $(this).data('direction') || false,
-                                animation = $(this).data('animation') || false
-                                ;
-                                if(direction && animation) {
-                                    $shape
-                                    .shape(animation + '.' + direction)
-                                    ;
-                                }
-                            }
-                        };
-                        // attach events
-                        $demo
-                            .shape()
-                        ;
-                        $directionButton
-                            .on('click', handler.rotate)
-                            .popup({
-                            position  : 'bottom center'
-                        })
-                        ;
-                    })
-                    ;
-                </script>
-
-            </div>
-        </div>
-    </section>
-<<<<<<< HEAD
-=======
--->
-
-<!-- Aqui va HORARIOS!!! -->
+    <!-- Aqui inicia horarioa -->
     <script type="text/javascript">
                   $(document)
                       .ready(function(){
@@ -271,6 +119,88 @@
      </div>
     </div>
    </div>
+    <!-- Termina HORARIOS -->
+    <!-- aqui inicia PLUGIN Y KARRUSEL -->
+       <div class="ui vertical segment">
+         <div class="ui stackable center aligned page grid">
+             <div class="two column center row">
+                 <div class="column center aligned">
+                     <div class="ui shape">
+                         <div class="sides">
+                             <div class="second side">
+                                 <img class="ui large image" src="images/Calendario_Oto15.png">
+                             </div>
+                             <div class="active first side">
+                                 <img class="ui large image inverted" src="images/calendario_profesional_2015.jpg">
+                             </div>
+                         </div>
+                     </div>
+                     <div class="ui ignored hidden divider"></div>
+                     <div class="ui ignored icon direction buttons">
+                         <div data-direction="over" data-animation="flip" title="Anterior" class="ui button" data-shape="square"><i class="arrow left icon"></i></div>
+                         <div data-direction="back" data-animation="flip" title="Siguiente" class="ui button" data-shape="square"><i class="arrow right icon"></i></div>
+                     </div>
+                     <p>Aquí va el plugin para facebook</p>
+                     <script type="text/javascript">
+                         $(document)
+                             .ready(function() {
+                             var
+                             $demo = $('.ui.shape'),
+                             $directionButton = $('.direction .button'),
+                             handler
+                             ;
+                        // event handlers
+                            handler = {
+                                rotate: function() {
+                                    var
+                                    $shape    = $(this).closest('.buttons').prevAll('.ui.shape').eq(0),
+                                    direction = $(this).data('direction') || false,
+                                    animation = $(this).data('animation') || false
+                                    ;
+                                    if(direction && animation) {
+                                        $shape
+                                        .shape(animation + '.' + direction)
+                                        ;
+                                    }
+                                }
+                            };
+                        // attach events
+                            $demo
+                                .shape()
+                            ;
+                            $directionButton
+                                .on('click', handler.rotate)
+                                .popup({
+                                position  : 'bottom center'
+                            })
+                            ;
+                         })
+                         ;
+                        </script>
+                 </div>
+                 <div class="right aligned column">
+
+                   <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+
+                   <div class="fb-page" data-href="https://www.facebook.com/pages/FCC-Secretar%C3%ADa-acad%C3%A9mica/113367745423678" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+                     <div class="fb-xfbml-parse-ignore">
+                       <blockquote cite="https://www.facebook.com/pages/FCC-Secretar%C3%ADa-acad%C3%A9mica/113367745423678">
+                         <a href="https://www.facebook.com/pages/FCC-Secretar%C3%ADa-acad%C3%A9mica/113367745423678">FCC Secretaría académica</a>
+                       </blockquote>
+                     </div>
+                   </div>
+
+                 </div>
+             </div>
+         </div>
+    </div>
 
     <!--Footer-->
     <div class="ui inverted footer vertical segment azul-oscuro-buap text-small">
