@@ -195,3 +195,29 @@ navbar a{
     margin: 0em 0em;
     border-radius: 0;
 }
+
+.circulos{
+  width: 185px;
+  height: 185px;
+  cursor: pointer;
+}
+
+#menu_desplegable .toc.item {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #menu_desplegable .item,
+  #menu_desplegable .menu {
+    display: none;
+  }
+
+  #menu_desplegable .toc.item {
+    display: block;
+  }
+
+  #menu_desplegable .header.item {
+    display: block;
+  }
+}
