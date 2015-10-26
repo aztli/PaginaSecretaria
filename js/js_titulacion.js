@@ -1,7 +1,5 @@
 // Carousel Auto-Cycle
   $(document).ready(function() {
-
-  /** Codigo para el menu lateral
     $('.masthead').visibility({
         once: false,
         onBottomPassed: function() {
@@ -14,9 +12,8 @@
 
     // create sidebar and attach to menu open
     $('.ui.sidebar').sidebar('attach events', '.toc.item');
-    **/
 
     $('.carousel').carousel({
-      interval: 6000
-    })
+       interval: 6000
+     })
   });
