@@ -10,30 +10,71 @@
     <link type="text/css" rel="stylesheet" href="css/icon.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
+    
+    
+    <script type="text/javascript">
+              $(document).ready(function() {
+               $('.masthead').visibility({
+                 once: false,
+                 onBottomPassed: function() {
+                 $('.fixed.menu').transition('fade in');
+              },
+            onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+            }
+       });
+
+       // create sidebar and attach to menu open
+       $('.ui.sidebar').sidebar('attach events', '.toc.item');
+
+  });
+
+</script>
 
 <body>
     <!-- Header -->
      <navbar id="top" class="ui menu inverted azul-oscuro-buap text-small">
-            <div class="right menu">
-              <a class="item" href="http://mail.office365.com/">Correo</a>
-              <a class="item" href="http://webserver1.siiaa.siu.buap.mx:81/autoservicios/twbkwbis.P_GenMenu?name=<homepage></homepage>">Autoservicios</a>
-              <a class="item" href="http://cmas.siu.buap.mx/portal_pprd/wb/English/">English</a>
-            </div>
-        </navbar>
-    <div class="ui container">
-        <div class="ui borderless secondary menu ">
-            <a href="index.html" class="ui left header item">
+          <div class="right menu">
+            <a class="item" href="http://mail.office365.com/">Correo</a>
+            <a class="item" href="http://webserver1.siiaa.siu.buap.mx:81/autoservicios/twbkwbis.P_GenMenu?name=<homepage></homepage>">Autoservicios</a>
+            <a class="item" href="http://cmas.siu.buap.mx/portal_pprd/wb/English/">English</a>
+          </div>
+      </navbar>
+
+      <!-- Menu lateral -->
+      <div class="ui vertical inverted azul-oscuro-buap sidebar menu left">
+        <a class="item azul-claro-buap-texto" href="index.html">Inicio</a>
+        <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
+        <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
+        <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
+        <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
+        <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
+      </div>
+
+
+      <!-- Menu principal -->
+      <div class="pusher">
+        <div class="ui vertical masthead center aligned segment">
+
+          <div class="ui container">
+            <div class="ui large secondary menu" id="menu_desplegable">
+              <a class="toc item">
+                <i class="sidebar icon"></i>
+              </a>
+              <a href="index.html" class="ui left header item">
                 <img class="ui mini image" src="images/logo_FCC.png">
-            </a>
-            <div class="right menu text-medium">
-              <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
-              <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
-              <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
-              <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
-              <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
+              </a>
+              <div class="right item">
+                <a class="item azul-claro-buap-texto" href="index.html">Inicio</a>
+                <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
+                <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
+                <a class="item active azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
+                <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
+                <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
+      </div>
 
     <div id="inicio" class="ui vertical feature segment">
     <div class="ui centered page grid">
