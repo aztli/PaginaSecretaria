@@ -9,10 +9,9 @@
           $('.fixed.menu').transition('fade out');
         }
     });
-
     // create sidebar and attach to menu open
     $('.ui.sidebar').sidebar('attach events', '.toc.item');
-
+    //Carousel 
     $('.carousel').carousel({
        interval: 6000
      })
