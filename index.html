@@ -3,88 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Secretaria Academica FCC</title>
+  <meta name="Title" content="Secretaria Academica FCC">
+  <meta name="description" content="Sitio Oficial para la Secretaria Academica de la Facultad de Computación en la Benemérita Universidad Autónoma de Puebla">
+  <meta name="keywords" content="Facultad, Ciencias, Computacion, Secretaria Academica, BUAP, Puebla, México, Educación, University, Superior, Benemérita, Universidad, Autónoma">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="http://www.buap.mx/buap_ico.png">
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-  <script src="js/semantic.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-  <link type="text/css" rel="stylesheet" href="css/icon.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <script type="text/javascript">
-                $(document).ready(function(){
-                    $('.ui.accordion').accordion();
-                    var $demo = $('.ui.shape'),$directionButton = $('.direction .button'),handler;
-               // event handlers
-                   handler = {
-                       rotate: function() {
-                           var
-                           $shape    = $(this).closest('.buttons').prevAll('.ui.shape').eq(0),
-                           direction = $(this).data('direction') || false,
-                           animation = $(this).data('animation') || false
-                           ;
-                           if(direction && animation) {
-                               $shape
-                               .shape(animation + '.' + direction)
-                               ;
-                           }
-                       }
-                   };
-               // attach events
-                   $demo.shape();
-                   $directionButton.on('click', handler.rotate).popup({
-                       position  : 'bottom center'
-                   });
-                   (function(d, s, id) {
-                     var js, fjs = d.getElementsByTagName(s)[0];
-                     if (d.getElementById(id)) return;
-                     js = d.createElement(s); js.id = id;
-                     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-                     fjs.parentNode.insertBefore(js, fjs);
-                   }(document, 'script', 'facebook-jssdk'));
-                
-                    $('.masthead').visibility({
-                 once: false,
-                 onBottomPassed: function() {
-                 $('.fixed.menu').transition('fade in');
-              },
-            onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-            }
-       });
-
-       // create sidebar and attach to menu open
-       $('.ui.sidebar').sidebar('attach events', '.toc.item');
-
-                    
-                });
-            </script>
-
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/semantic.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js'></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <style >
-    @media only screen and (max-width: 600px) {
-        #fenix{
-          width: 100%;
-        }
-        #minerva{
-          width: 100%;
-        }
-        #salon{
-          width: 100%;
-        }
-        #imagen1{
-          width: 300px;
-          height: 300px;
-        }
-        #imagen2{
-          width: 300px;
-          height: 300px;
-        }
-
-      }
-    </style>
      <!-- Header -->
       <navbar id="top" class="ui menu inverted azul-oscuro-buap text-small">
           <div class="right menu">
@@ -118,11 +51,11 @@
                 <img class="ui mini image" src="images/logo_FCC.png">
               </a>
               <div class="right item">
-                <a class="item azul-claro-buap-texto" href="index.html">Inicio</a>
+                <a class="item active azul-claro-buap-texto" href="index.html">Inicio</a>
                 <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
                 <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
                 <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
-                <a class="item active azul-claro-buap-texto" href="cua.html">Actas CUA</a>
+                <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
                 <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
               </div>
             </div>

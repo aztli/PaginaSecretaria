@@ -3,34 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Secretaria Academica FCC</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="http://www.buap.mx/buap_ico.png">
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-  <script src="js/semantic.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-  <link type="text/css" rel="stylesheet" href="css/icon.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <script src="js/semantic.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/semantic.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </head>
-
-<script type="text/javascript">
-$(document).ready(function() {
-
-  $('.masthead').visibility({
-      once: false,
-      onBottomPassed: function() {
-        $('.fixed.menu').transition('fade in');
-      },
-      onBottomPassedReverse: function() {
-        $('.fixed.menu').transition('fade out');
-      }
-  });
-
-  // create sidebar and attach to menu open
-  $('.ui.sidebar').sidebar('attach events', '.toc.item');
-
-});
-
-</script>
 
 
 <body>
@@ -567,8 +548,7 @@ $(document).ready(function() {
 
      <!--Script de tabs-->
       <script type="text/javascript">
-        $('.menu .item')
-          .tab();
+        $('.menu .item').tab();
       </script>
 
 </div>
