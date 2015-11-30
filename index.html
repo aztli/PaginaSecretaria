@@ -3,62 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Secretaria Academica FCC</title>
+  <meta name="Title" content="Secretaria Academica FCC">
+  <meta name="description" content="Sitio Oficial para la Secretaria Academica de la Facultad de Computación en la Benemérita Universidad Autónoma de Puebla">
+  <meta name="keywords" content="Facultad, Ciencias, Computacion, Secretaria Academica, BUAP, Puebla, México, Educación, University, Superior, Benemérita, Universidad, Autónoma">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="http://www.buap.mx/buap_ico.png">
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-  <script src="js/semantic.min.js"></script>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-  <link type="text/css" rel="stylesheet" href="css/icon.css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/semantic.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js'></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body>
-    <!-- Header -->
-     <navbar id="top" class="ui menu inverted azul-oscuro-buap text-small">
-            <div class="right menu">
-              <a class="item" href="http://mail.office365.com/">Correo</a>
-              <a class="item" href="http://webserver1.siiaa.siu.buap.mx:81/autoservicios/twbkwbis.P_GenMenu?name=<homepage></homepage>">Autoservicios</a>
-              <a class="item" href="http://cmas.siu.buap.mx/portal_pprd/wb/English/">English</a>
-            </div>
-     </navbar>
-      <div class="ui container">
+     <!-- Header -->
+      <navbar id="top" class="ui menu inverted azul-oscuro-buap text-small">
+          <div class="right menu">
+            <a class="item" href="http://mail.office365.com/">Correo</a>
+            <a class="item" href="http://webserver1.siiaa.siu.buap.mx:81/autoservicios/twbkwbis.P_GenMenu?name=<homepage></homepage>">Autoservicios</a>
+            <a class="item" href="http://cmas.siu.buap.mx/portal_pprd/wb/English/">English</a>
+          </div>
+      </navbar>
 
-
-        <div class="ui borderless secondary menu ">
-            <a href="index.html" class="ui left header item">
-              <img class="ui mini image" src="images/logo_FCC.png">
-            </a>
-
-            <div class="right menu text-medium">
-              <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
-              <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
-              <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
-              <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
-              <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
-            </div>
-        </div>
-
+      <!-- Menu lateral -->
+      <div class="ui vertical inverted azul-oscuro-buap sidebar menu left">
+        <a class="item azul-claro-buap-texto" href="index.html">Inicio</a>
+        <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
+        <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
+        <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
+        <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
+        <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
       </div>
+
+
+      <!-- Menu principal -->
+      <div class="pusher">
+        <div class="ui vertical masthead center aligned segment">
+
+          <div class="ui container">
+            <div class="ui large secondary menu" id="menu_desplegable">
+              <a class="toc item">
+                <i class="sidebar icon"></i>
+              </a>
+              <a href="index.html" class="ui left header item">
+                <img class="ui mini image" src="images/logo_FCC.png">
+              </a>
+              <div class="right item">
+                <a class="item active azul-claro-buap-texto" href="index.html">Inicio</a>
+                <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
+                <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
+                <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
+                <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
+                <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
     <!-- Aqui inicia horarioa -->
-    <script type="text/javascript">
-                  $(document)
-                      .ready(function(){
-                      $('.ui.accordion')
-                          .accordion()
-                      ;
-                  })
-                  ;
-              </script>
-        
+
      <h1 class="center aligned ui header">Horarios</h1>
       <div class="ui center aligned container">
        <div class="row">
         <div class="ui equal width grid">
-        
-         <div class="column">
+
+         <div class="column" id="fenix">
           <h4 class="ui icon header">
-           
+
            <div class="ui fluid accordion">
-            <img class="ui centered image" src="images/Fenix_icon.png" width="100px" height="100px"></img> 
+            <img class="ui centered image" src="images/Fenix_icon.png" width="100px" height="100px"></img>
              <div class="title active" align="center" class="content">
               <i class="dropdown icon"></i>Horarios<br>Modelo Educativo FENIX.
              </div>
@@ -67,15 +82,13 @@
                <a class="item azul-claro-buap-texto"href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/ICC_FENIX.pdf">Ingeniería en Cs. de la                      Computación.</a>
                <a class="item azul-claro-buap-texto"href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/CCO_FENIX.pdf">Licenciatura en Cs. de la                    Computación.</a>
               </div>
-             </div>      
+             </div>
             </div>
             <hr>
            </h4>
           </div>
-             
-          <div class="column">
+          <div class="column" id="minerva">
           <h4 class="ui icon header">
-           
            <div class="ui fluid accordion">
             <img class="ui centered image" src="images/minerva_icon.png" width="100px" height="100px"></img>
              <div class="title active" align="center" class="content">
@@ -87,15 +100,13 @@
                <a class="item azul-claro-buap-texto"href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/CCO_MUM.pdf">Licenciatura en Cs. de la                    Computación.</a>
                <a class="item azul-claro-buap-texto"href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/ITI.pdf">Ingeniería en Tecnologías de                  la Información.</a>
               </div>
-             </div>      
+             </div>
             </div>
             <hr>
            </h4>
-          </div> 
-             
-          <div class="column">
+          </div>
+          <div class="column" id="salon">
           <h4 class="ui icon header">
-           
            <div class="ui fluid accordion">
             <img class="ui centered image" src="images/class_room_icon.png" width="100px" height="100px"></img>
              <div class="title active" align="center" class="content">
@@ -109,13 +120,11 @@
                <a class="item azul-claro-buap-texto"href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/Salones_1CCO4_201535.pdf">1CCO4</a>
                <a class="item azul-claro-buap-texto"href="http://www.cs.buap.mx/~secreacademica/horarios/Otono2015/Salones_1EMA1_201535.pdf">1EMA1</a>
               </div>
-             </div>      
+             </div>
             </div>
             <hr>
            </h4>
-          </div>  
-              
-          
+          </div>
      </div>
     </div>
    </div>
@@ -128,10 +137,10 @@
                      <div class="ui shape">
                          <div class="sides">
                              <div class="second side">
-                                 <img class="ui large image" src="images/Calendario_Oto15.png">
+                                 <img class="ui large image" src="images/Calendario_Oto15.png" id="imagen2">
                              </div>
                              <div class="active first side">
-                                 <img class="ui large image inverted" src="images/calendario_profesional_2015.jpg">
+                                 <img class="ui large image inverted" src="images/calendario_profesional_2015.jpg" id="imagen1">
                              </div>
                          </div>
                      </div>
@@ -140,55 +149,11 @@
                          <div data-direction="over" data-animation="flip" title="Anterior" class="ui button" data-shape="square"><i class="arrow left icon"></i></div>
                          <div data-direction="back" data-animation="flip" title="Siguiente" class="ui button" data-shape="square"><i class="arrow right icon"></i></div>
                      </div>
-                
-                     <script type="text/javascript">
-                         $(document)
-                             .ready(function() {
-                             var
-                             $demo = $('.ui.shape'),
-                             $directionButton = $('.direction .button'),
-                             handler
-                             ;
-                        // event handlers
-                            handler = {
-                                rotate: function() {
-                                    var
-                                    $shape    = $(this).closest('.buttons').prevAll('.ui.shape').eq(0),
-                                    direction = $(this).data('direction') || false,
-                                    animation = $(this).data('animation') || false
-                                    ;
-                                    if(direction && animation) {
-                                        $shape
-                                        .shape(animation + '.' + direction)
-                                        ;
-                                    }
-                                }
-                            };
-                        // attach events
-                            $demo
-                                .shape()
-                            ;
-                            $directionButton
-                                .on('click', handler.rotate)
-                                .popup({
-                                position  : 'bottom center'
-                            })
-                            ;
-                         })
-                         ;
-                        </script>
+
+
                  </div>
                  <div class="right aligned column">
-
                    <div id="fb-root"></div>
-                    <script>(function(d, s, id) {
-                      var js, fjs = d.getElementsByTagName(s)[0];
-                      if (d.getElementById(id)) return;
-                      js = d.createElement(s); js.id = id;
-                      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-                      fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));</script>
-
                    <div class="fb-page" data-href="https://www.facebook.com/pages/FCC-Secretar%C3%ADa-acad%C3%A9mica/113367745423678" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
                      <div class="fb-xfbml-parse-ignore">
                        <blockquote cite="https://www.facebook.com/pages/FCC-Secretar%C3%ADa-acad%C3%A9mica/113367745423678">
@@ -244,6 +209,7 @@
             </div>
         </div>
     </div>
+  </div>
 </body>
 
 
