@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Secretaria Academica FCC</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" type="image/png" href="http://www.buap.mx/buap_ico.png">
-  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-  <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="js/semantic.min.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
-</head>
-
-
-<body>
-      <!-- Header -->
-
-      <navbar id="top" class="ui menu inverted azul-oscuro-buap text-small">
+   <meta charset="UTF-8">
+      <title>Secretaria Academica FCC</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="icon" type="image/png" href="http://www.buap.mx/buap_ico.png">
+      <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+      <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js'></script>
+      <script src="js/semantic.min.js"></script>
+      <script type="text/javascript" src="js/scripts.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+      // body...
+      //$('.menu .item').tab();
+      $('.tabular.menu .item').tab();
+       });
+    </script>
+  </head>
+  <style>
+    #tabs{
+      margin-top: 1em;
+      margin-bottom: 5.23em;
+    }
+  </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <navbar id="top" class="ui menu inverted azul-oscuro-buap text-small">
           <div class="right menu">
             <a class="item" href="http://mail.office365.com/">Correo</a>
             <a class="item" href="http://webserver1.siiaa.siu.buap.mx:81/autoservicios/twbkwbis.P_WWWLogin">Autoservicios</a>
           </div>
-      </navbar>
-
-      <!-- Menu lateral -->
-      <div class="ui vertical inverted azul-oscuro-buap sidebar menu left">
-        <a class="item azul-claro-buap-texto" href="index.html">Inicio</a>
-        <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
-        <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
-        <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
-        <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
-        <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
-      </div>
-
-
+        </navbar>
+        <!-- Menu lateral -->
+        <div class="ui vertical inverted azul-oscuro-buap sidebar menu left">
+            <a class="item azul-claro-buap-texto" href="index.html">Inicio</a>                
+            <a class="item azul-claro-buap-texto" href="Servicios-Escolares.html">Servicios Escolares</a>
+            <a class="item azul-claro-buap-texto" href="eventos.html">Eventos y Convocatorias</a>
+            <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
+            <a class="item azul-claro-buap-texto" href="cua.html">CUA</a>
+            <a class="item azul-claro-buap-texto" href="directorio.html">Directorio FCC</a>  
+        </div>
       <!-- Menu principal -->
       <div class="pusher">
         <div class="ui vertical masthead center aligned segment">
@@ -49,551 +58,782 @@
               </a>
               <div class="right item">
                 <a class="item azul-claro-buap-texto" href="index.html">Inicio</a>
-                <a class="item active azul-claro-buap-texto" href="Profesores.html">Profesores</a>
-                <a class="item azul-claro-buap-texto" href="titulacion.html">Alumnos</a>
-                <a class="item azul-claro-buap-texto" href="planes.html">Plan de estudios</a>
-                <a class="item azul-claro-buap-texto" href="cua.html">Actas CUA</a>
-                <a class="item azul-claro-buap-texto" href="http://www.cs.buap.mx/">FCC</a>
+                <a class="item azul-claro-buap-texto" href="Servicios-Escolares.html">Servicios Escolares</a>
+                <a class="item azul-claro-buap-texto" href="eventos.html">Eventos y Convocatorias</a>
+                <a class="item azul-claro-buap-texto" href="Profesores.html">Profesores</a>
+                <a class="item azul-claro-buap-texto" href="cua.html">CUA</a>
+               
+                <a class="item azul-claro-buap-texto" href="directorio.html">Directorio FCC</a>
               </div>
             </div>
           </div>
       </div>
+        <br>
+        <br>
+        <div class="ui grid container" id="tabs">
+            <div class="four wide column">
+                <div class="ui vertical fluid tabular menu">
+                    <a class="active item" data-tab="listado">
+                        Listado
+                    </a>
 
-      <br>
-      <div class="ui container">
-
-
-      <!-- Comienzo de Tabs -->
-      <div class="ui pointing secondary menu">
-        <a class="item" data-tab="Listado">Listado</a>
-        <a class="item" data-tab="Procesos">Procesos</a>
-        <a class="item" data-tab="Formatos">Formatos</a>
-        <a class="active item" data-tab="Programacion">Programacion Anual</a>
-      </div>
-
-      <!-- Contenido de tabs !-->
-      <div class="ui tab" data-tab="Listado">
-
-          <div class="ui stackable four column vertically divided grid container">
-
-              <div class="column ">
-                <center>
-                  <div class="ui circular segment circulos inverted blue" onclick="window.location='http://secreacademica.cs.buap.mx/profesores/Coordinaciones_Comisiones_Laboratorios_2013.pdf';">
-                    <h3 >Coordinaciones, Comisiones y Jefaturas</h3>
-                  </div>
-                </center>
-              </div>
-
-              <div class="column">
-                <center>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/MATERIAS_X_AREAS_REVISION_102013.pdf';" class="ui circular segment circulos inverted blue" >
-                    <h3 >Por Materia</h3>
-                  </div>
-                </center>
-              </div>
-
-              <div class="column">
-                <center>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/Profes_AreaConocimiento_28102013.pdf';" class="ui circular segment circulos inverted blue" >
-                    <h3 >Por Antigüedad</h3>
-                  </div>
-                </center>
-              </div>
-
-              <div class="ui center aligned column">
-                <center>
-                  <div class="row">
-                    <div class="ui circular segment circulos inverted blue" >
-                      <h3 >Por Área</h3>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="row">
-                    <div class="ui middle aligned divided list">
-                      <div style="cursor: pointer;" onclick="window.location='http://secreacademica.cs.buap.mx/profesores/AREA_PRIMARIA_12112012.pdf';" class="ui center aligned segment">Primarias</div>
-                      <div style="cursor: pointer;" onclick="window.location='http://secreacademica.cs.buap.mx/profesores/AREAS_SECUNDARIAS_12112012.pdf';" class="ui center aligned segment">Secundarias</div>
-                      <div style="cursor: pointer;" onclick="window.location='http://secreacademica.cs.buap.mx/profesores/AREAS_TERCIARIAS_12112012.pdf';" class="ui center aligned segment">Terciarias</div>
-                    </div>
-                  </div>
-                </center>
-              </div>
-
-          </div>
-
-      </div>
-
-      <div class="ui tab segment" data-tab="Procesos">
-
-          <div class="ui active tab segment" data-tab="Procesos/1">
-            <h1>PROCESO PRODEP 2015</h1>
-            <div class="ui stackable three column vertically divided grid container">
-
-                <div class="column">
-                  <center>
-                      <div class="ui circular segment circulos inverted blue" >
-                        <h3>Gestion Academica</h3>
-                      </div>
-                      <div class="ui divided list">
-                        <div style="cursor: pointer;" onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/GestionAcademica_Actualizacion_03022015.pdf';" class="ui center aligned segment">Actualización de PAs</div>
-                        <div style="cursor: pointer;" onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/GestionAcademica_CreacionPE_03022015.pdf';" class="ui center aligned segment">Creación de PE</div>
-                        <div style="cursor: pointer;" onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/GestionAcademica_CreacionPAITI_03022015.pdf';" class="ui center aligned segment">Creación de PAs ITI</div>
-                        <div style="cursor: pointer;" onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/GestionAcademica_CreacionPA_03022015.pdf';" class="ui center aligned segment">Creación de PAs MUM</div>
-                      </div>
-                  </center>
-                </div>
-
-                <div class="column">
-                  <center>
-                    <div class="ui circular segment circulos inverted blue" >
-                      <h3>Revisores</h3>
-                    </div>
-                    <div class="ui middle aligned divided list">
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/EXPERIENCIAPROFESIONAL_2013.pdf';" class="ui center aligned segment">Experiencia Profesional 2013</div>
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/EXPERIENCIAPROFESIONAL_2014.pdf';" class="ui center aligned segment">Experiencia Profesional 2014</div>
-                    </div>
-                  </center>
-                </div>
-
-                <div class="column">
-                  <center>
-                    <div class="ui circular segment circulos inverted blue" >
-                      <h3>Titulados</h3>
-                    </div>
-                    <div class="ui middle aligned divided list">
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/TITULADOS2012_19022015.pdf';" class="ui center aligned segment">2012 (Tesis, Tesina, Creditos de Maestría)</div>
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/TITULADOS2013_19022015.pdf';" class="ui center aligned segment">2013 (Tesis, Tesina, Creditos de Maestría)</div>
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PRODEP15/TITULADOS2014_19022015.pdf';" class="ui center aligned segment">2014 (Tesis, Tesina, Creditos de Maestría)</div>
-                    </div>
-                  </center>
-                </div>
-
-             </div>
-             <br>
-           </div>
-
-          <div class="ui tab segment" data-tab="Procesos/2">
-            <h1>PROCESO PROMEP 2014</h1>
-            <div class="ui stackable three column vertically divided grid container">
-
-              <div class="column">
-                <center>
-                  <div class="ui circular segment circulos inverted blue" >
-                    <h3>Gestion Academica</h3>
-                  </div>
-                  <div class="ui middle aligned divided list">
-                    <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PROMEP2014/GestionAcademica_Actualizacion_PAs_06022014.pdf';" class="ui center aligned segment">Actualización de PAs (06/02/2014)</div>
-                    <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PROMEP2014/GestionAcademica_CreacionPE_06022014.pdf';" class="ui center aligned segment">Creación de PE (06/02/2014)</div>
-                    <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PROMEP2014/GestionAcademica_Creacion_NuevosPAs_ITI_06022014.pdf';" class="ui center aligned segment">Creación de PAs ITI (06/02/2014)</div>
-                    <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PROMEP2014/GestionAcademica_Creacion_NuevosPAs_MUM_06022014.pdf';" class="ui center aligned segment">Creación de PAs MUM (06/02/2014)</div>
-                  </div>
-                </center>
-              </div>
-
-              <div class="column">
-                <center>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/TITULADOS2011.pdf';" class="ui circular segment circulos inverted blue" >
-                    <h3>Titulación Tesis-Tesina 2011(Resumen)</h3>
-                  </div>
-                </center>
-              </div>
-
-              <div class="column">
-                <center>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/PROMEP2014/EXPERIENCIAPROFESIONAL.pdf';" class="ui circular segment circulos inverted blue" >
-                    <h3>REVISORES Experiencia Profesional 2013 (10/02/2014)</h3>
-                  </div>
-                </center>
-              </div>
-            </div>
-          </div>
-
-          <div class="ui tab segment" data-tab="Procesos/3">
-            <h1>PROCESO ESDEPED 2014 1/3 </h1>
-            <div class="ui stackable three column vertically divided grid container">
-                <div class="column">
-                  <center>
-                    <div class="ui circular segment circulos inverted blue" >
-                      <h3>Titulación Tesis-Tesina</h3>
-                    </div>
-                    <div class="ui middle aligned divided list">
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Titulados_Tesis_Tesina_2012.pdf';" class="ui center aligned segment">2012(Resumen)</div>
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Titulados_Tesis_Tesina_2013.pdf';" class="ui center aligned segment">2013(Resumen)</div>
-                    </div>
-                  </center>
-                </div>
-
-                <div class="column">
-                  <center>
-                    <div class="ui circular segment circulos inverted blue" >
-                      <h3>Ceneval</h3>
-                    </div>
-                    <div class="ui middle aligned divided list">
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Ceneval_2012.pdf';" class="ui center aligned segment">2012 (Pantallas -Actualizado 17/02/2014)</div>
-                      <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Ceneval_2013.pdf';" class="ui center aligned segment">2013 (Pantallas -Actualizado 17/02/2014)</div>
-                    </div>
-                  </center>
-                </div>
-
-                <div class="column">
-                  <center>
-                    <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Tesis2012_2013.pdf';" class="ui circular segment circulos inverted blue" >
-                      <h3>Tesis-Tesinas 2012-2013 (Pantallas -Actualizado 17/02/2014)</h3>
-                    </div>
-                  </center>
+                    <a class="item" data-tab="progAnual">
+                        Programacion anual
+                    </a>
+                    <a class="item" data-tab="promep">
+                        Proceso Promep 2014
+                    </a>
+                    <a class="item" data-tab="esdeped">
+                        Proceso Esdeped 2016
+                    </a>
+                    <a class="item" data-tab="prodep">
+                        Proceso Prodep
+                    </a>
+                    <a class="item" data-tab="tesis">
+                        Actas De Titulacion Tesis-Tesina
+                    </a>
+                    <a class="item" data-tab="pa2016">
+                        Proceso de actualización PA's 2016
+                    </a>
+                    <a class="item" data-tab="pa2011">
+                        Actualizacion PA's en Formato 2011
+                    </a>
                 </div>
             </div>
-
-          </div>
-
-          <div class="ui tab segment" data-tab="Procesos/4">
-           <h1>PROCESO ESDEPED 2014 2/3 </h1>
-           <div class="ui stackable three column vertically divided grid container">
-               <div class="column">
-                 <center>
-                   <div class="ui circular segment circulos inverted blue" >
-                     <h3>Departamentales</h3>
-                   </div>
-                   <div class="ui middle aligned divided list">
-                     <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Departamentales_2012.pdf';" class="ui center aligned segment">2012 (Pantallas -Actualizado 18/02/2014)</div>
-                     <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Departamentales_2013.pdf';" class="ui center aligned segment">2013 (Pantallas -Actualizado 18/02/2014)</div>
-                   </div>
-                 </center>
-               </div>
-
-               <div class="column">
-                 <center>
-                   <div class="ui circular segment circulos inverted blue" >
-                     <h3>Practicas Profesionales</h3>
-                   </div>
-                   <div class="ui middle aligned divided list">
-                     <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/PracticasProf_2012.pdf';" class="ui center aligned segment">2012(Pantallas -Actualizado 18/02/2014)</div>
-                     <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/PracticasProf_2013.pdf';" class="ui center aligned segment">2013(Pantallas -Actualizado 18/02/2014)</div>
-                   </div>
-                 </center>
-               </div>
-
-               <div class="column">
-                 <center>
-                   <div class="ui circular segment circulos inverted blue" >
-                     <h3>Eventos</h3>
-                   </div>
-                   <div class="ui middle aligned divided list">
-                     <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/UA_Eventos2012_2013.pdf';" class="ui center aligned segment">2012-2013 (Pantallas)</div>
-                     <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Eventos_2012_detalle.pdf';" class="ui center aligned segment">2012 (Detallado)</div>
-                     <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/Eventos_2013_detalle.pdf';" class="ui center aligned segment">2013 (Detallado)</div>
-                   </div>
-                 </center>
-               </div>
-
-             </div>
-           </div>
-
-          <div class="ui tab segment" data-tab="Procesos/5">
-            <h1>PROCESO ESDEPED 2014 3/3 </h1>
-            <div class="ui stackable two column vertically divided grid container">
-                <div class="column">
-                  <center>
-                    <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/3.2.1.20_DGES.pdf';" class="ui circular segment circulos inverted blue" >
-                      <h3>3.2.1.20_DGES (Pantallas)</h3>
-                    </div>
-                  </center>
+            <div class="twelve wide stretched column">
+                <div class="ui tab" data-tab="progAnual">
+                    <table class="ui blue selectable celled table">
+                        <thead>
+                            <tr>
+                                <th class="ui dividing header">
+                                    Programacion Anual
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="horarios/Primavera2017/FormatoPrimavera2017.docx">
+                                        Formato de Selección de Materias Primavera 2017
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="horarios/Primavera2017/Primavera2017_V0.pdf">
+                                        PRIMAVERA 2017 (Versión 0 -Sin Profesor- 22/09/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="horarios/Primavera2017/Primavera2017_V1.pdf">
+                                        PRIMAVERA 2017 (Versión 1 -Con Profesor- 30/09/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="horarios/Primavera2017/Primavera2017_V2.pdf">
+                                        PRIMAVERA 2017 (Versión 2 -Con Profesor- 07/10/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="horarios/Primavera2017/Primavera2017_V3.pdf">
+                                        PRIMAVERA 2017 (Versión Banner -Con Profesor- 13/10/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>               
+                <div class="ui active tab" data-tab="listado">
+                    <table class="ui blue selectable celled table">
+                        <thead>
+                            <tr>
+                                <th class="ui dividing header" colspan="2">
+                                    Listado
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/Coordinaciones_Comisiones_Laboratorios_2013.pdf">
+                                        Coordinaciones, Comisiones y Jefaturas
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/MATERIAS_X_AREAS_REVISION_102013.pdf">
+                                        Por Materia
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/Profes_AreaConocimiento_28102013.pdf">
+                                        Por Antigüedad
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Por Area
+                                </td>
+                                <td>
+                                    <a href="profesores/AREA_PRIMARIA_12112012.pdf">
+                                        Primarias
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/AREAS_SECUNDARIAS_12112012.pdf">
+                                        Secundarias
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/AREAS_TERCIARIAS_12112012.pdf">
+                                        Terciarias
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-                <div class="column">
-                  <center>
-                    <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ESDEPED2014/3.5.26_Acreditacion_ING.pdf';" class="ui circular segment circulos inverted blue" >
-                      <h3>3.5.26 Acreditacion de la Ing. en Ciencias de la Computación (Pantallas)</h3>
-                    </div>
-                  </center>
+                <div class="ui tab" data-tab="prodep">
+                    <table class="ui blue selectable celled table">
+                        <thead>
+                            <tr>
+                                <th class="ui dividing header">
+                                    Proceso Prodep 2016
+                                </th>
+                                <th class="ui dividing header">
+                                    Formatos
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Gestion Academica
+                                </td>
+                                <td>
+                                    <a href="profesores/PRODEP15/GestionAcademica_Actualizacion_04022016.pdf">
+                                        Actualización de PAs (Actualizado al 04/02/2016)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PRODEP15/GestionAcademica_CreacionPE_03022015.pdf">
+                                        Creación de PE (Actualizado al 03/02/2015)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PRODEP15/GestionAcademica_CreacionPAITI_04022016.pdf">
+                                        Creación de PAs ITI (Actualizado al 04/02/2016)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PRODEP15/GestionAcademica_CreacionPA_04022016.pdf">
+                                        Creación de PAs MUM (Actualizado al 04/02/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Revisores
+                                </td>
+                                <td>
+                                    <a href="profesores/PRODEP15/EXPERIENCIAPROFESIONAL_2013.pdf">
+                                        Experiencia Profesional 2013
+                                    </a>
+                                    <br/>
+                                    <a href="'profesores/PRODEP15/EXPERIENCIAPROFESIONAL_2014.pdf">
+                                        Experiencia Profesional 2014
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PRODEP15/EXPERIENCIAPROFESIONAL_2015.pdf">
+                                        REVISORES Experiencia Profesional 2015
+                                    </a>
+                                    <a href="profesores/PRODEP15/EXPERIENCIAPROFESIONAL_2015_2.pdf">
+                                        REVISORES Experiencia Profesional 2015-2
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Titulados
+                                </td>
+                                <td>
+                                    <a href="profesores/PRODEP15/TITULADOS2012_19022015.pdf">
+                                        2012 (Tesis, Tesina, Creditos de Maestría)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PRODEP15/TITULADOS2013_19022015.pdf">
+                                        2013 (Tesis, Tesina, Creditos de Maestría)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PRODEP15/TITULADOS2014_19022015.pdf">
+                                        2014 (Tesis, Tesina, Creditos de Maestría)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PRODEP15/TITULADOS2015_02022016.pdf">
+                                        Titulados 2015 (Tesis, Tesina, Créditos de Maestría)
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-             </div>
-           </div>
-
-          <!-- Tabs numericas inferiores !-->
-          <div class="ui blue inverted pagination menu">
-            <a class="active item" data-tab="Procesos/1">1</a>
-            <a class="item" data-tab="Procesos/2">2</a>
-            <a class="item" data-tab="Procesos/3">3</a>
-            <a class="item" data-tab="Procesos/4">4</a>
-            <a class="item" data-tab="Procesos/5">5</a>
-          </div>
-
-      </div>
-
-      <div class="ui tab segment" data-tab="Formatos">
-        <!-- Tab Content !-->
-        <div class="ui active tab segment" data-tab="Formatos/1">
-          <h1>Formatos PA 2011 1/2</h1>
-          <div class="ui stackable three column vertically divided grid container">
-
-            <div class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/FORMATO_PA_2011.docx';" class="ui circular segment circulos inverted blue" >
-                  <h3>Formato PA 2011</h3>
+                <div class="ui tab" data-tab="promep">
+                    <table class="ui blue selectable celled table">
+                        <thead>
+                            <tr>
+                                <th class="ui dividing header">
+                                    Proceso Promep 2014
+                                </th>
+                                <th class="ui dividing header">
+                                    Formatos
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Gestion Academica
+                                </td>
+                                <td>
+                                    <a href="profesores/PROMEP2014/GestionAcademica_Actualizacion_PAs_06022014.pdf">
+                                        Actualización de PAs (06/02/2014)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PROMEP2014/GestionAcademica_CreacionPE_06022014.pdf">
+                                        Creación de PE (06/02/2014)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PROMEP2014/GestionAcademica_Creacion_NuevosPAs_ITI_06022014.pdf">
+                                        Creación de PAs ITI (06/02/2014)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/PROMEP2014/GestionAcademica_Creacion_NuevosPAs_MUM_06022014.pdf">
+                                        Creación de PAs MUM (06/02/2014)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/ESDEPED2014/TITULADOS2011.pdf">
+                                        Titulación Tesis-Tesina 2011(Resumen)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/PROMEP2014/EXPERIENCIAPROFESIONAL.pdf">
+                                        REVISORES Experiencia Profesional 2013 (10/02/2014)
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-              </center>
+                <div class="ui tab" data-tab="esdeped">
+                    <table class="ui blue selectable structured celled table">
+                        <thead>
+                            <tr>
+                                <th class="ui dividing header" colspan="">
+                                    PROCESO ESDEPED 2016
+                                </th>
+                                <th class="ui dividing header">
+                                    Formatos
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/ESDEPED2016/UA_Tesis%202014-2015.pdf">
+                                        Tesis-Tesinas 2014-2015
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ceneval
+                                </td>
+                                <td>
+                                    <a href="profesores/ESDEPED2016/3.4.30_Participacionen_CENEVAL_2014.pdf">
+                                        2014 (Pantallas -Actualizado 17/02/2016)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.4.30_Participacionen_CENEVAL_2015.pdf">
+                                        Ceneval 2015 (Pantallas -Actualizado 17/02/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/ESDEPED2016/3.2.1.20_ActualizaciondeProgramasdeEstudiodeMateria(Posgrado)_2014_2015.pdf">
+                                        Actualización de Programas de Estudio de Materia (Posgrado) 2014 y2015
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Departamentales
+                                </td>
+                                <td>
+                                    <a href="profesores/ESDEPED2016/3.2.1.21_EXAMENES_DEPARTAMENTALES_2014.pdf">
+                                        Departamentales 2014 (Actualizado 04/03/2016)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.2.1.21_EXAMENES_DEPARTAMENTALES_2015.pdf">
+                                        Departamentales 2015 (Actualizado 04/03/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Practicas Profesionales
+                                </td>
+                                <td>
+                                    <a href="profesores/ESDEPED2016/3.4.20_SUPERVISION_PRACTICA_PROFESIONAL_2014.pdf">
+                                        Prácticas Profesionales 2014
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.4.20_SUPERVISION_PRACTICA_PROFESIONAL_2015.pdf">
+                                        Prácticas Profesionales 2015
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/ESDEPED2016/Eventos_2014_y_2015.pdf">
+                                        Eventos 2014-2015
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Comites
+                                </td>
+                                <td>
+                                    <a href="profesores/ESDEPED2016/3.4.4_Comite_Tutorial_Posgrado_2014.pdf">
+                                        Comité Tutorial Posgrado 2014
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.4.4_Comite_Tutorial_Posgrado_2015.pdf">
+                                        Comité Tutorial Posgrado 2015
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Acreditacion
+                                </td>
+                                <td>
+                                    <a href="profesores/ESDEPED2016/3.5.26_ACREDITACION_LIC_EN_CS_DE_LA_COMPUTACION_2015.pdf">
+                                        3.5.26 Acreditación de la Lic. en Ciencias de la Computación (2015)
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.5.26_ACREDITACION_LIC_EN_CS_DE_LA_COMPUTACION_2015.pdf">
+                                        Acreditación de la Lic. en Ciencias de la Computación (2015)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Coordinadores
+                                </td>
+                                <td>
+                                    <a href="profesores/ESDEPED2016/3.5.5_Coordinador_o_Jefe_de_area_o_Presidente_de_Academia_2014.pdf">
+                                        Coordinador o Jefe de área o Presidente de Academia 2014
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.5.5_Coordinador_o_Jefe_de_area_o_Presidente_de_Academia_2015.pdf">
+                                        Coordinador o Jefe de área o Presidente de Academia 2015
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.5.6_Coordinador_de_Posgrado_o_Secretario_Academico_de_Posgrado_2014.pdf">
+                                        Coordinador de Posgrado o Secretario Académico de Posgrado 2014
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.5.6_Coordinador_de_Posgrado_o_Secretario_Academico_de_Posgrado_2015.pdf">
+                                        Coordinador de Posgrado o Secretario Académico de Posgrado 2015
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.5.8_Coordinador_de_Colegio_o_Centro_o_Departamento_2014.pdf">
+                                        Coordinador de Colegio o Centro o Departamento 2014
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.5.8_Coordinador_de_Colegio_o_Centro_o_Departamento_2015.pdf">
+                                        Coordinador de Colegio o Centro o Departamento 2015
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Consejeros
+                                </td>
+                                <td>
+                                    <a href="profesores/ESDEPED2016/3.5.13_CONSEJERO_DE_UNIDAD_ACADEMICA_2014.pdf">
+                                        Consejero de la Unidad Académica 2014.pdf
+                                    </a>
+                                    <a href="profesores/ESDEPED2016/3.5.13_CONSEJERO_DE_UNIDAD_ACADEMICA_2015.pdf">
+                                        Consejero de la Unidad Académica 2015.pdf
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Comisiones
+                                </td>
+                                <td>
+                                    <a href="profesores/ESDEPED2016/3.5.14_COMISIONES_DEL_CONSEJO_DE_UNIDAD_ACADEMICA_2014.pdf">
+                                        Comisiones del consejo de Unidad Académica 2014
+                                    </a>
+                                    <br/>
+                                    <a href="profesores/ESDEPED2016/3.5.14_COMISIONES_DEL_CONSEJO_DE_UNIDAD_ACADEMICA_2015.pdf">
+                                        Comisiones del consejo de Unidad Académica 2015
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/ESDEPED2016/3.3.37_Proyectos%20de%20Investigacion_2014_y_2015.pdf">
+                                        Proyectos de Investigacion 2014 y 2015
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="profesores/ESDEPED2016/Seminarios_talleres_y_cursos_2014.pdf">
+                                        Seminarios talleres y cursos 2014
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ui tab" data-tab="tesis">
+                    <table class="ui blue selectable structured celled table">
+                        <thead>
+                            <tr>
+                                <th class="ui dividing header" colspan="">
+                                    ACTAS DE TITULACIÓN TESIS-TESINA
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ESDEPED2014/actas_tesis_tesinas_2015-2016.pdf">
+                                        Actas Titulación 2015 (29/09/2015-12/02/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ESDEPED2014/actas_tesis_tesinas_2015.pdf">
+                                        Actas Titulación 2015 (Hasta 15/09/2015)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ESDEPED2014/actas_tesis_tesinas_2014.pdf">
+                                        Actas Titulación 2014 (Todas)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ESDEPED2014/actas_tesis_tesinas_2013.pdf">
+                                        Actas Titulación 2013 (Todas)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ESDEPED2014/actas_tesis_tesinas_2012.pdf">
+                                        Actas Titulación 2012 (Todas)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ESDEPED2014/actas_tesis_tesinas_2011.pdf">
+                                        Actas Titulación 2011 (Todas)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ESDEPED2014/actas_tesis_tesinas_2010.pdf">
+                                        Actas Titulación 2010 (Todas)
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ui tab" data-tab="pa2016">
+                    <table class="ui blue selectable structured celled table">
+                        <thead>
+                            <tr>
+                                <th class="ui dividing header" colspan="">
+                                    Proceso de actualización PA's 2016
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="profesores/actualizacion2016/Presentacion_actualizacionPA_2016.pdf">
+                                        Presentación del proceso de Actualización de PA's 2016
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/actualizacion2016/FORMATO_PROG._ASIG.COMPETENCIAS.docx">
+                                        Formato-PA por Competencias
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/actualizacion2016/M1_CCO.pdf">
+                                        Matriz 1 CCO
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/actualizacion2016/M1_ICC.pdf">
+                                        Matriz 1 ICC
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/actualizacion2016/M1_ITI.pdf">
+                                        Matriz ITI
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/actualizacion2016/RRPAPTAMEGaceta197.pdf">
+                                        Reglamento de Permanencia y Trayectoria Académica 2015
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ui tab" data-tab="pa2011">
+                    <table class="ui blue selectable structured celled table">
+                        <thead>
+                            <tr>
+                                <th class="ui dividing header" colspan="">
+                                    ACTUALIZACIÓN PA's en Formato 2011
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/PRESENTACION_ACTUALIZACION_PA.pdf">
+                                        Presentacion Actualizacion PA's a Formato 2011
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/PAs_EN_VERDE.rar">
+                                        Programas de Asignatura en VERDE
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/PAs_EN_AMARILLO.rar">
+                                        Fichas Revisión PAs en AMARILLO
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/FORMATO_NOMBRE_ARCHIVOS.pdf">
+                                        Formato del Nombre de los Archivos
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/REVISION_PAS_ICCyCCO_14012016.pdf">
+                                        STATUS PAs ICC y CCO (Actualizado 13/01/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/REVISION_PAS_ITI_12022015.pdf">
+                                        STATUS PAs ITI (Actualizado 12/02/2016)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/Acta_CDESCUA_28112011.PDF">
+                                        PA's ICC y CCO Enviados a la DGES (28/11/2011)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/Acta_CDESCUA_29062012.PDF">
+                                        PA's ICC y CCO Enviados a la DGES (29/06/2012)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/Oficio_VD.pdf">
+                                        PA's ICC y CCO Enviados a la DGES (19/02/2013)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/2_Oficio_DGES.pdf">
+                                        PA's ICC y CCO Enviados a la DGES (17/04/2013)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/3_Oficio_VD.pdf">
+                                        PA's ICC y CCO Enviados a la DGES (30/04/2013)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/4_Oficio_VD.pdf">
+                                        PA's ICC y CCO Enviados a la DGES (05/06/2013)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/Oficio_DGES_21012014.pdf">
+                                        PA's ICC y CCO Enviados a la DGES (21/01/2014)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/2_Oficio_VD.pdf">
+                                        PA's ITI Enviados a la DGES (17/04/2013)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/Oificio_DGES_ITI_20012014.pdf">
+                                        PA's ITI Enviados a la DGES (21/01/2014)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/M4_ICC_02052013.pdf">
+                                        Matriz 4 ICC (02/05/2013)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/M4_CCO_02052013.pdf">
+                                        Matriz 4 CCO (02/05/2013)
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="profesores/ACTUALIZACION_PA_2011/M4_ITI_02052013.pdf">
+                                        Matriz 4 ITI (02/05/2013)
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-            <div  class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/INSTRUCTIVO_PA_2011.pdf';" class="ui circular segment circulos inverted blue" >
-                  <h3>Instructivo PA 2011</h3>
-                </div>
-              </center>
-            </div>
-
-            <div class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/EJES_TRANS_2012.pdf';" class="ui circular segment circulos inverted blue" >
-                  <h3>Ejemplo de Ejes Transversales</h3>
-                </div>
-              </center>
-            </div>
-
-          </div>
         </div>
-
-        <div class="ui tab segment" data-tab="Formatos/2">
-          <h1>Formatos PA 2011 2/2</h1>
-          <div class="ui stackable three column vertically divided grid container">
-
-            <div class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/MODELOS_EDITORIALES_2011.pdf';" class="ui circular segment circulos inverted blue" >
-                  <h3>Modelos Editoriales</h3>
+        
+        <!--Inicio Footer -->
+        <footer class="ui inverted footer vertical segment azul-oscuro-buap text-small">
+            <div class="ui stackable center aligned page grid">
+                <div class="six wide column center aligned stackable grid">
+                    <div id="logo_buap_footer">
+                        <a class="escudo" href="http://www.buap.mx/" target="_blank">
+                        </a>
+                    </div>
                 </div>
-              </center>
+                <div class="ten wide column">
+                    <div class="ui three column left aligned stackable grid">
+                        <div class="left aligned column">
+                            <div class="ui inverted link list azul-claro-buap-texto">
+                                <br>
+                                    <br>
+                                        <a class="item azul-claro-buap-texto" href="http://calidadfcc.cs.buap.mx/">
+                                            Acreditación
+                                        </a>
+                                        <a class="item azul-claro-buap-texto" href="http://ces.cs.buap.mx/">
+                                            Comisión de evaluación y Seg. Curri.
+                                        </a>
+                                        <a class="item azul-claro-buap-texto" href="http://ces.cs.buap.mx/">
+                                            Administración
+                                        </a>
+                                        <a class="item azul-claro-buap-texto" href="http://www.dges.buap.mx/">
+                                            DGES
+                                        </a>
+                                    </br>
+                                </br>
+                            </div>
+                        </div>
+                        <div class="left aligned column">
+                            <div class="ui inverted link list">
+                                <br>
+                                    <br>
+                                        <a class="item azul-claro-buap-texto" href="http://cmas.siu.buap.mx/portal_pprd/wb/rectoria/avisos">
+                                            Aviso de Privacidad
+                                        </a>
+                                        <a class="item azul-claro-buap-texto" href="http://cmas.siu.buap.mx/portal_pprd/wb/BBUAP/directorio_telefonico_2013">
+                                            Directorio Telefónico
+                                        </a>
+                                        <a class="item azul-claro-buap-texto" href="http://cmas.siu.buap.mx/portal_pprd/wb/BBUAP/buzon_de_comentarios">
+                                            Buzón de Comentarios
+                                        </a>
+                                    </br>
+                                </br>
+                            </div>
+                        </div>
+                        <div class="left aligned column">
+                            <br>
+                                <br>
+                                    <addr class="azul-claro-buap-texto">
+                                        Facultad de Cs. de la Computación
+                            14 Sur y Av. San Claudio C.P.
+                            Puebla, Puebla, México
+                                    </addr>
+                                </br>
+                            </br>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/GUIA_TECNICA_REVISION_DGES.docx';" class="ui circular segment circulos inverted blue" >
-                  <h3>Guia Técnica Revisión DGES</h3>
-                </div>
-              </center>
-            </div>
-
-            <div class="column">
-              <center>
-                <div class="ui circular segment circulos inverted blue" >
-                  <h3>Ejemplo Revisión</h3>
-                </div>
-                <div class="ui middle aligned divided list">
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/REVISION_PROG_ALGEBRA_SUPERIOR.docx';" class="ui center aligned segment">Prog. Algebra Superior</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/REVISION_PROG_CIRCUITOS_ELEC.docx';" class="ui center aligned segment">Prog. Circuitos Eléctricos</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/REVISION_PROG_ING_SOFT.docx';" class="ui center aligned segment">Ing. de Software</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/FormatosPA2011/REVISION_PROGRAMACIONII.docx';" class="ui center aligned segment">Programación II</div>
-                </div>
-              </center>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="ui tab segment" data-tab="Formatos/3">
-          <h1>ACTUALIZACIÓN PA's en Formato 2011  1/3</h1>
-          <div class="ui stackable three column vertically divided grid container">
-            <div class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/PRESENTACION_ACTUALIZACION_PA.pdf';" class="ui circular segment circulos inverted blue" >
-                  <h3>Presentacion Actualizacion PA's a Formato 2011</h3>
-                </div>
-              </center>
-            </div>
-
-            <div class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/PAs_EN_VERDE.rar';" class="ui circular segment circulos inverted blue" >
-                  <h3>Programas de Asignatura en VERDE</h3>
-                </div>
-              </center>
-            </div>
-
-            <div class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/PAs_EN_AMARILLO.rar';" class="ui circular segment circulos inverted blue" >
-                  <h3>Fichas Revisión PAs en AMARILLO</h3>
-                </div>
-              </center>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="ui tab segment" data-tab="Formatos/4">
-          <h1>ACTUALIZACIÓN PA's en Formato 2011  2/3</h1>
-          <div class="ui stackable three column vertically divided grid container">
-
-            <div class="column">
-              <center>
-                <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/FORMATO_NOMBRE_ARCHIVOS.pdf';" class="ui circular segment circulos inverted blue" >
-                  <h3>Formato del Nombre de los Archivos</h3>
-                </div>
-              </center>
-            </div>
-
-            <div class="column">
-              <center>
-                <div class="ui circular segment circulos inverted blue" >
-                  <h3>STATUS PAs</h3>
-                </div>
-                <div class="ui middle aligned divided list">
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/REVISION_PAS_ICCyCCO_120515.pdf';" class="ui center aligned segment">ICC y CCO (Actualizado 12/05/2015)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/REVISION_PAS_ITI_120515.pdf';" class="ui center aligned segment">ITI (Actualizado 12/05/2015)</div>
-                </div>
-              </center>
-            </div>
-
-            <div class="column">
-              <center>
-                <div class="ui circular segment circulos inverted blue" >
-                  <h3>PA's ICC y CCO Enviados a la DGES</h3>
-                </div>
-                <div class="ui middle aligned divided list">
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/Acta_CDESCUA_28112011.PDF';" class="ui center aligned segment">(28/11/2011)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/Acta_CDESCUA_29062012.PDF';" class="ui center aligned segment">(29/06/2012)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/Oficio_VD.pdf';" class="ui center aligned segment">(19/02/2013)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/2_Oficio_DGES.pdf';" class="ui center aligned segment">(17/04/2013)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/3_Oficio_VD.pdf';" class="ui center aligned segment">(30/04/2013)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/4_Oficio_VD.pdf';" class="ui center aligned segment">(05/06/2013)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/Oficio_DGES_21012014.pdf';" class="ui center aligned segment">(21/01/2014)</div>
-                </div>
-              </center>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="ui tab segment" data-tab="Formatos/5">
-          <h1>ACTUALIZACIÓN PA's en Formato 2011  3/3</h1>
-          <div class="ui stackable two column vertically divided grid container">
-
-            <div class="column">
-              <center>
-                <div class="ui circular segment circulos inverted blue" >
-                  <h3>PA's ITI Enviados a la DGES</h3>
-                </div>
-                <div class="ui middle aligned divided list">
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/2_Oficio_VD.pdf';" class="ui center aligned segment">(17/04/2013)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/Oificio_DGES_ITI_20012014.pdf';" class="ui center aligned segment">(21/01/2014)</div>
-                </div>
-              </center>
-            </div>
-
-            <div class="column">
-              <center>
-                <div class="ui circular segment circulos inverted blue" >
-                  <h3>Matriz 4</h3>
-                </div>
-                <div class="ui middle aligned divided list">
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/M4_ICC_02052013.pdf';" class="ui center aligned segment">ICC (02/05/2013)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/M4_CCO_02052013.pdf';" class="ui center aligned segment">CCO (02/05/2013)</div>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/profesores/ACTUALIZACION_PA_2011/M4_ITI_02052013.pdf';" class="ui center aligned segment">ITI (02/05/2013)</div>
-                </div>
-              </center>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="ui blue inverted pagination menu">
-          <a class="active item" data-tab="Formatos/1">1</a>
-          <a class="item" data-tab="Formatos/2">2</a>
-          <a class="item" data-tab="Formatos/3">3</a>
-          <a class="item" data-tab="Formatos/4">4</a>
-          <a class="item" data-tab="Formatos/5">5</a>
-        </div>
-      </div>
-
-      <div class="ui active tab" data-tab="Programacion">
-        <!-- Tab Content !-->
-           <div class=" ui stackable four column vertically divided grid container">
-              <div class="column">
-                <center>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/horarios/Otono2015/FormatoCarga_OTO2015.docx';" class="ui circular segment circulos inverted blue" >
-                    <h3>Formato de Selección de Materias Otoño 2015</h3>
-                  </div>
-                </center>
-              </div>
-
-              <div class="column">
-                <center>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/horarios/Otono2015/OTONO2015_V0.pdf';" class="ui circular segment circulos inverted blue" >
-                    <h3>OTOÑO 2015 (Versión 0 -Sin Profesor- 28/05/2015)</h3>
-                  </div>
-                </center>
-              </div>
-
-              <div class="column">
-                <center>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/horarios/Otono2015/OTONO2015_V1.pdf';" class="ui circular segment circulos inverted blue" >
-                    <h3>OTOÑO 2015 (Versión 1 -Con Profesor- 08/06/2015)</h3>
-                  </div>
-                </center>
-              </div>
-
-              <div class="column">
-                <center>
-                  <div onclick="window.location='http://secreacademica.cs.buap.mx/horarios/Otono2015/OTONO2015_V2.pdf';" class="ui circular segment circulos inverted blue" >
-                    <h3>OTOÑO 2015 (Versión 2 -De Banner- 12/06/2015)</h3>
-                  </div>
-                </center>
-              </div>
-          </div>
-          <br>
-      </div>
-
-
-     <!--Script de tabs-->
-      <script type="text/javascript">
-        $('.menu .item').tab();
-      </script>
-
-</div>
-
-     <!--Footer-->
-     <div class="ui inverted footer vertical segment azul-oscuro-buap text-small" >
-         <div class="ui stackable center aligned page grid">
-             <div class="six wide column center aligned stackable grid">
-                 <div id="logo_buap_footer">
-                     <a href="http://www.buap.mx/" target="_blank" class="escudo"></a>
-                 </div>
-             </div>
-             <div class="ten wide column">
-                 <div class="ui three column left aligned stackable grid">
-                     <div class="left aligned column">
-                         <div class="ui inverted link list azul-claro-buap-texto">
-                             <br>
-                             <br>
-                             <a class="item azul-claro-buap-texto" href="http://calidadfcc.cs.buap.mx/">Acreditación</a>
-                             <a class="item azul-claro-buap-texto" href="http://ces.cs.buap.mx/">Comisión de evaluación y Seg. Curri.</a>
-                             <a class="item azul-claro-buap-texto" href="http://ces.cs.buap.mx/">Administración</a>
-                             <a class="item azul-claro-buap-texto" href="http://www.dges.buap.mx/">DGES</a>
-                         </div>
-                     </div>
-                     <div class="left aligned column">
-                         <div class="ui inverted link list">
-                             <br>
-                             <br>
-                             <a class="item azul-claro-buap-texto" href="http://cmas.siu.buap.mx/portal_pprd/wb/rectoria/avisos">Aviso de Privacidad</a>
-                             <a class="item azul-claro-buap-texto" href="http://cmas.siu.buap.mx/portal_pprd/wb/BBUAP/directorio_telefonico_2013">Directorio Telefónico</a>
-                             <a class="item azul-claro-buap-texto" href="http://cmas.siu.buap.mx/portal_pprd/wb/BBUAP/buzon_de_comentarios">Buzón de Comentarios</a>
-                         </div>
-                     </div>
-                     <div class="left aligned column">
-                         <br>
-                         <br>
-                         <addr class="azul-claro-buap-texto">
-                             Facultad de Cs. de la Computación
-                             14 Sur y Av. San Claudio C.P.
-                             Puebla, Puebla, México
-                         </addr>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
-
-</body>
+        </footer>
+        <!--Fin Footer -->
+    </body>
 </html>

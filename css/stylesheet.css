@@ -235,6 +235,18 @@ navbar a{
   }
 }
 
+.ui.circular.images,
+.ui.circular.image {
+  overflow: hidden;
+}
+
+.ui.circular.images .image,
+.ui.circular.image,
+.ui.circular.images .image > *,
+.ui.circular.image > * {
+  border-radius: 500rem;
+}
+
 /* carousel*/
 
 .carousel  a {

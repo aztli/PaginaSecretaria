@@ -1,5 +1,6 @@
 // Carousel Auto-Cycle
   $(document).ready(function() {
+    $('.menu .item').tab();
     $('.masthead').visibility({
         once: false,
         onBottomPassed: function() {
@@ -11,6 +12,9 @@
     });
     // create sidebar and attach to menu open
     $('.ui.sidebar').sidebar('attach events', '.toc.item');
+    //Menus desplegables
+    $('.ui.accordion').accordion();
+   
     //Carousel
     $('.carousel').carousel({
        interval: 5000
@@ -19,8 +23,7 @@
     //Tabs
     $('.menu .item').tab();
 
-    //Menus desplegables
-    $('.ui.accordion').accordion();
+    
      var $demo = $('.ui.shape'),$directionButton = $('.direction .button'),handler;
  // event handlers
     handler = {
